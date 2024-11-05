@@ -74,3 +74,129 @@
 // const arrNumbers = [1, 4, 22, 36, 21, 7, 18, 11, 99];
 // let newNumber = arrNumbers.filter(numbers => numbers % 3 === 0 && numbers % 2 === 0);
 // console.log(newNumber);
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////1234567890////////////////////////
+//  - Завдання: Написати функцію, яка повертає масив імен активних користувачів, старших за 18 років.
+//    - Очікуваний результат: ['Ivan', 'Maria']
+//      const users = [
+//        { name: 'Ivan', age: 20, isActive: true },
+//        { name: 'Anna', age: 17, isActive: true },
+//        { name: 'Pavel', age: 22, isActive: false },
+//        { name: 'Maria', age: 19, isActive: true },
+//      ];
+     
+// function getOldUsers() {
+//     return users.filter(({age}) => age > 18).map(({name}) => name)
+// }
+// console.log(getOldUsers(users));
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// - Завдання: Написати функцію, яка обчислює загальну суму цін всіх продуктів у масиві.
+//    - Очікуваний результат: 2500
+    //  const products = [
+    //    { productName: 'Laptop', price: 1200 },
+    //    { productName: 'Phone', price: 800 },
+    //    { productName: 'Tablet', price: 500 },
+    //  ];
+// function getTotalSum(products) {
+//          return products.reduce((sum, product) => sum += product.price, 0);
+// };
+// console.log(getTotalSum(products));
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  - Завдання: Реалізувати функцію, яка шукає об'єкт за id і повертає title знайденого об'єкта.
+//    - Приклад виклику: findTitleById(items, 2)
+//    - Очікуваний результат: 'Pen'
+
+//      const items = [
+//        { id: 1, title: 'Book', description: 'A mystery novel' },
+//        { id: 2, title: 'Pen', description: 'A blue ink pen' },
+//        { id: 3, title: 'Notebook', description: 'A5 lined notebook' },
+//      ];
+// function findTitleById(ID) {
+//          return items.find(({id}) => ID === id).title
+//      }
+// console.log(findTitleById(2));
+
+//   - Завдання: Написати функцію, яка сортує книги в порядку спадання за роком видання.
+//    - Очікуваний результат: Масив книг, відсортований від новіших до старіших.
+//      const books = [
+//        { title: 'The Catcher in the Rye', author: 'J.D. Salinger', year: 1951 },
+//        { title: 'To Kill a Mockingbird', author: 'Harper Lee', year: 1960 },
+//        { title: '1984', author: 'George Orwell', year: 1949 },
+//      ];
+// function sortBooks(books) {
+//     return books.sort((a, b) => b.year - a.year);
+//      }
+// console.log(sortBooks(books));
+
+//   - Завдання: Написати функцію, яка повертає новий масив з об'єктами формату { fullName: 'Ivan Ivanov', age: 30 }.
+//    - Очікуваний результат:
+//      const people = [
+//        { firstName: 'Ivan', lastName: 'Ivanov', age: 30 },
+//        { firstName: 'Anna', lastName: 'Petrova', age: 25 },
+//      ];
+// function getNewArr(people) {
+//          return people.map(({firstName, lastName, age}) => ({age, fullName:`${firstName + ' ' + lastName}`}))
+//      }
+// console.log(getNewArr(people));
+
+
+// 1. Виведення чисел до N
+//    - Вхідні дані: N = 5
+//    - Завдання: Написати цикл for, який виведе числа від 1 до N.
+//    - Очікуваний результат: 1, 2, 3, 4, 5
+
+// for (let index = 1; index <= 5; index++) {
+//     console.log(index);
+// }
+
+
+// 2. Підрахунок суми чисел
+//    - Вхідні дані:
+//      - Не потребує додаткових даних, рахуємо від 1 до 100.
+//    - Завдання: Використовуючи цикл for, обчислити суму всіх чисел від 1 до 100.
+//    - Очікуваний результат: 5050
+// let totalSum= 0;
+// for (let i = 1; i <= 100; i++){
+//     totalSum += i;
+// }
+// console.log(totalSum);
+
+// 3. Перевірка простого числа
+//    - Вхідні дані: N = 7
+//    - Завдання: Написати функцію, яка перевіряє, чи є число N простим.
+//    - Очікуваний результат: true (оскільки 7 — просте число)
+// function getSimpleNumber(number) {
+//     for (let i = 2; i < number; i++){
+//         if (number % i === 0) {
+//             return false;
+//         }
+       
+//     }
+//     return true;
+// }
+// console.log(getSimpleNumber(3));
+// 4. Пошук максимального значення в масиві
+//    - Вхідні дані:
+//  - Завдання: Реалізувати функцію, яка знаходить найбільше число в масиві.
+//    - Очікуваний результат: 98
+     
+
+const numbers = [10, 23, 45, 2, 98, 12];
+let sum = numbers[0];
+
+function getBiggerNumber(numbers) {
+    for (let i = 0; i < numbers.length; i++){
+        if (number[i] numbers) {
+            sum = number[i];
+  }
+    }
+}
+  console.log(getBiggerNumber(numbers));
