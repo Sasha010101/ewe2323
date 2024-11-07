@@ -3,7 +3,7 @@
 //     if (number % 2 === 0) {
 //          console.log(number * 4);
 //     }
-   
+
 // });
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Створити масив рядків - вивести методом map у консоль кожно строку, а поруч - її довжину
 // Створити масив рядків - вивести методом map у консоль кожно строку, а поруч - її довжину
@@ -39,8 +39,6 @@
 ///////////////////////////////////////////////
 // Створити масив об'єктів та вивести у консоль тільки ті значення поля name юзерів вік яких більше за 20.
 
-
-
 // let users = [
 //     {
 //         name: 'Anya',
@@ -75,14 +73,6 @@
 // let newNumber = arrNumbers.filter(numbers => numbers % 3 === 0 && numbers % 2 === 0);
 // console.log(newNumber);
 
-
-
-
-
-
-
-
-
 //////////////////////////////////////////////////////1234567890////////////////////////
 //  - Завдання: Написати функцію, яка повертає масив імен активних користувачів, старших за 18 років.
 //    - Очікуваний результат: ['Ivan', 'Maria']
@@ -92,7 +82,7 @@
 //        { name: 'Pavel', age: 22, isActive: false },
 //        { name: 'Maria', age: 19, isActive: true },
 //      ];
-     
+
 // function getOldUsers() {
 //     return users.filter(({age}) => age > 18).map(({name}) => name)
 // }
@@ -100,11 +90,11 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // - Завдання: Написати функцію, яка обчислює загальну суму цін всіх продуктів у масиві.
 //    - Очікуваний результат: 2500
-    //  const products = [
-    //    { productName: 'Laptop', price: 1200 },
-    //    { productName: 'Phone', price: 800 },
-    //    { productName: 'Tablet', price: 500 },
-    //  ];
+//  const products = [
+//    { productName: 'Laptop', price: 1200 },
+//    { productName: 'Phone', price: 800 },
+//    { productName: 'Tablet', price: 500 },
+//  ];
 // function getTotalSum(products) {
 //          return products.reduce((sum, product) => sum += product.price, 0);
 // };
@@ -147,7 +137,6 @@
 //      }
 // console.log(getNewArr(people));
 
-
 // 1. Виведення чисел до N
 //    - Вхідні дані: N = 5
 //    - Завдання: Написати цикл for, який виведе числа від 1 до N.
@@ -156,7 +145,6 @@
 // for (let index = 1; index <= 5; index++) {
 //     console.log(index);
 // }
-
 
 // 2. Підрахунок суми чисел
 //    - Вхідні дані:
@@ -178,7 +166,7 @@
 //         if (number % i === 0) {
 //             return false;
 //         }
-       
+
 //     }
 //     return true;
 // }
@@ -187,16 +175,101 @@
 //    - Вхідні дані:
 //  - Завдання: Реалізувати функцію, яка знаходить найбільше число в масиві.
 //    - Очікуваний результат: 98
-     
 
-const numbers = [10, 23, 45, 2, 98, 12];
-let sum = numbers[0];
+// const numbers = [10, 23, 45, 2, 98, 12];
+// let maxNumber = numbers[0];
 
-function getBiggerNumber(numbers) {
-    for (let i = 0; i < numbers.length; i++){
-        if (number[i] numbers) {
-            sum = number[i];
-  }
-    }
-}
-  console.log(getBiggerNumber(numbers));
+// function getBiggerNumber(numbers) {
+//     for (let i = 0; i < numbers.length; i++){
+//         if (numbers[i] > maxNumber) {
+//             maxNumber = numbers[i];
+//   }
+//     }
+//     return maxNumber;
+// }
+// console.log(getBiggerNumber(numbers));
+
+// 1. Виведення чисел до N
+//    - Вхідні дані: N = 5
+//    - Завдання: Написати цикл for, який виведе числа від 1 до N.
+//    - Очікуваний результат: 1, 2, 3, 4, 5
+// const N = 5;
+
+// for (let i = N; i >= 1; i--) {
+//     console.log(i);
+// }
+
+// 1. Перебір властивостей об'єкта
+//    - Вхідні дані:
+
+//      const student = { name: 'Ivan', age: 20, isActive: true }
+// for (let key in student) {
+//     console.log(`${key}: ${student[key]}`);
+
+// };
+
+//    - Завдання: Вивести всі ключі та значення цього об'єкта.
+//    - Очікуваний результат:
+
+//      name: Ivan
+//      age: 20
+//      isActive: true
+
+// 2. Підрахунок кількості властивостей
+//    - Вхідні дані:
+
+// const obj = { name: 'Ivan', age: 20, city: 'Kyiv' };
+// let entries = Object.entries(obj).length;
+//console.log(Object.entries(obj).length);
+// console.log(entries.length);
+// let count = 0;
+
+// for (let key in obj) {
+//   count++;
+// }
+
+// console.log(count);
+
+// 3. Фільтрація властивостей за типом
+//    - Вхідні дані:
+// let a = 'test';
+// let aType = typeof(a);//typeof a; -> 'string'
+// let test = {};
+// test.street = 20
+// test['city'] = 'Kiyv';
+// result[age] = 15
+// const data = { name: "Ivan", age: 20, city: "Kyiv", score: 15 };
+// let result = {};
+// for (let key in data) {
+//     if (typeof data[key] === "number") {
+//     result[key] = data[key]
+// }
+// }
+// console.log(result);
+//    - Завдання: Повернути новий об'єкт з тільки числовими властивостями.
+//    - Очікуваний результат:
+
+//      { age: 20, score: 15 }
+// 4. Копіювання об'єкта
+//    - Вхідні дані:
+
+const person = { name: "Ivan", age: 20, city: "Kyiv", test: [1, 2, 3, 4] };
+let copyPerson = { ...person }; //shalow copy - не глибока копія
+// copyPerson = { name: "Ivan", age: 20, city: "Kyiv", test: [1, 2, 3, 4] };
+// person.test.push('test');
+// copyPerson.test.push('some text value')
+// console.log("person", person);
+// console.log("copyPerson", copyPerson);
+
+// let secCopy = structuredClone(person); //deep copy - глибока копія - робить нові посилання для глибоко вкладених масивів чи об'єктів
+// person.test.push('copied by shalow copy');
+// console.log("secCopy", secCopy);
+// console.log("person", person);
+
+//    - Завдання: Повернути новий об'єкт, що є копією вихідного.
+//    - Очікуваний результат:
+
+//      { name: 'Ivan', age: 20, city: 'Kyiv' }
+// let test = { name: "User" };
+// let test2 = { name: "User" };
+// console.log(test === test2);
