@@ -253,23 +253,93 @@
 // 4. Копіювання об'єкта
 //    - Вхідні дані:
 
-const person = { name: "Ivan", age: 20, city: "Kyiv", test: [1, 2, 3, 4] };
-let copyPerson = { ...person }; //shalow copy - не глибока копія
-copyPerson = { name: "Ivan", age: 20, city: "Kyiv", test: [1, 2, 3, 4] };
-person.test.push('test');
-copyPerson.test.push('some text value')
-console.log("person", person);
-console.log("copyPerson", copyPerson);
 
-let secCopy = structuredClone(person); //deep copy - глибока копія - робить нові посилання для глибоко вкладених масивів чи об'єктів
-person.test.push('copied by shalow copy');
-console.log("secCopy", secCopy);
-console.log("person", person);
+// const person = { name: "Ivan", age: 20, city: "Kyiv", test: [1, 2, 3, 4] };
+// let copyPerson = { ...person }; //shalow copy - не глибока копія
+// copyPerson = { name: "Ivan", age: 20, city: "Kyiv", test: [1, 2, 3, 4] };
+// person.test.push('test');
+// copyPerson.test.push('some text value')
+// console.log("person", person);
+// console.log("copyPerson", copyPerson);
 
-   - Завдання: Повернути новий об'єкт, що є копією вихідного.
-   - Очікуваний результат:
+// const person = { name: "Ivan", age: 20, city: "Kyiv", test: [1, 2, 3, 4] };
+// let copyPerson = { ...person }; //shalow copy - не глибока копія
+// copyPerson = { name: "Ivan", age: 20, city: "Kyiv", test: [1, 2, 3, 4] };
+// person.test.push('test');
+// copyPerson.test.push('some text value')
+// console.log("person", person);
+// console.log("copyPerson", copyPerson);
 
-     { name: 'Ivan', age: 20, city: 'Kyiv' }
-let test = { name: "User" };
-let test2 = { name: "User" };
-console.log(test === test2);
+
+// let secCopy = structuredClone(person); //deep copy - глибока копія - робить нові посилання для глибоко вкладених масивів чи об'єктів
+// person.test.push('copied by shalow copy');
+// console.log("secCopy", secCopy);
+// console.log("person", person);
+
+//    - Завдання: Повернути новий об'єкт, що є копією вихідного.
+//    - Очікуваний результат:
+
+//      { name: 'Ivan', age: 20, city: 'Kyiv' }
+// let test = { name: "User" };
+// let test2 = { name: "User" };
+// console.log(test === test2);
+
+//      { name: 'Ivan', age: 20, city: 'Kyiv' }
+// let test = { name: "User" };
+// let test2 = { name: "User" };
+// console.log(test === test2);
+
+//////////////////////////////////////////////////////////////
+// 1. Фільтрація чисел більших за 10
+//    - Вхідні дані: 
+    
+// const numbers = [5, 12, 7, 20, 15, 2];
+// function getBiggerNumber(arr) {
+//          return arr.filter(num => num >10)
+// }
+//      console.log(getBiggerNumber(numbers));
+     
+//    - Завдання: Напишіть функцію, яка повертає новий масив з числами, що більші за 10.
+
+// 2. Пошук максимального числа в масиві
+//    - Вхідні дані: 
+    
+// const numbers = [3, 15, 7, 29, 10];
+// function maxNumber(arr) {
+//          return Math.max(...numbers)
+// }
+//      console.log(maxNumber(numbers));
+     
+//    - Завдання: Напишіть функцію, яка знаходить максимальне число в масиві.
+/////////////////////////
+
+// 3. Обчислення суми всіх елементів масиву
+//    - Вхідні дані: 
+    
+//      const numbers = [1, 2, 3, 4, 5];
+// function getSumNumbers(arrNumbers) {
+//     return arrNumbers.reduce((sum, number)=> sum + number, 0)
+// }
+// console.log(getSumNumbers(numbers));
+     
+//    - Завдання: Напишіть функцію, яка повертає суму всіх чисел у масиві.
+
+////////////////////
+// 4. Перетворення масиву в рядок
+//    - Вхідні дані: 
+    
+// const words = ["apple", "banana", "cherry"];
+// function getString(arr) {
+//      return arr.join(",")
+//      }
+//      console.log(getString(words));
+//    - Завдання: Напишіть функцію, яка перетворює масив слів у один рядок, розділений комами.
+
+// 5. Видалення елементів масиву за індексом
+//    - Вхідні дані: 
+    
+//      const arr = [1, 2, 3, 4, 5];
+//      const indexToRemove = 2;
+     
+//    - Завдання: Напишіть функцію, яка видаляє елемент масиву за вказаним індексом.
+
