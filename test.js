@@ -255,21 +255,21 @@
 
 const person = { name: "Ivan", age: 20, city: "Kyiv", test: [1, 2, 3, 4] };
 let copyPerson = { ...person }; //shalow copy - не глибока копія
-// copyPerson = { name: "Ivan", age: 20, city: "Kyiv", test: [1, 2, 3, 4] };
-// person.test.push('test');
-// copyPerson.test.push('some text value')
-// console.log("person", person);
-// console.log("copyPerson", copyPerson);
+copyPerson = { name: "Ivan", age: 20, city: "Kyiv", test: [1, 2, 3, 4] };
+person.test.push('test');
+copyPerson.test.push('some text value')
+console.log("person", person);
+console.log("copyPerson", copyPerson);
 
-// let secCopy = structuredClone(person); //deep copy - глибока копія - робить нові посилання для глибоко вкладених масивів чи об'єктів
-// person.test.push('copied by shalow copy');
-// console.log("secCopy", secCopy);
-// console.log("person", person);
+let secCopy = structuredClone(person); //deep copy - глибока копія - робить нові посилання для глибоко вкладених масивів чи об'єктів
+person.test.push('copied by shalow copy');
+console.log("secCopy", secCopy);
+console.log("person", person);
 
-//    - Завдання: Повернути новий об'єкт, що є копією вихідного.
-//    - Очікуваний результат:
+   - Завдання: Повернути новий об'єкт, що є копією вихідного.
+   - Очікуваний результат:
 
-//      { name: 'Ivan', age: 20, city: 'Kyiv' }
-// let test = { name: "User" };
-// let test2 = { name: "User" };
-// console.log(test === test2);
+     { name: 'Ivan', age: 20, city: 'Kyiv' }
+let test = { name: "User" };
+let test2 = { name: "User" };
+console.log(test === test2);
