@@ -385,3 +385,66 @@
 // textEl.addEventListener("mouseover", e => {
 //     textEl.style.background = "blue"
 // })
+///////////////////////////////////////////////////////////////
+// 1. Фільтрація чисел більше 10
+// const numbers = [4, 12, 7, 20, 15, 3];
+// const filtered = numbers.filter(num => num > 10);
+// console.log(filtered);
+///////////////////////////////////////////////////////////////
+// 2. Отримання імен користувачів
+  
+//    const users = [
+//      { name: 'Alice', age: 25 },
+//      { name: 'Bob', age: 30 },
+//      { name: 'Charlie', age: 35 }
+// ];
+// const names = users.map(user => user.name);
+// console.log(names);
+///////////////////////////////////////////////////////////////
+// 3. Перевірка наявності значення в масиві
+//  const fruits = ['apple', 'banana', 'cherry', 'date'];
+// const fruitToCheck = 'apple';
+// const isFruit = fruits.includes(fruitToCheck);
+// console.log(isFruit);
+///////////////////////////////////////////////////////////////
+// 4. Підрахунок суми чисел
+  
+//    const numbers = [10, 20, 30, 40];
+// const sum = numbers.reduce((total, num) => total + num, 0)
+// console.log(sum);
+// 5. Сортування об’єктів за віком
+  
+//    const people = [
+//      { name: 'Alice', age: 25 },
+//      { name: 'Bob', age: 20 },
+//      { name: 'Charlie', age: 35 }
+// ];
+// const sortAge = people.sort((a, b) => a.age - b.age);
+// console.log(sortAge);
+
+   // Результат: [
+   //   { name: 'Bob', age: 20 },
+   //   { name: 'Alice', age: 25 },
+   //   { name: 'Charlie', age: 35 }
+// ]
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 1. Зміна стилю елемента при кліку: Створити кнопку,
+//     при натисканні на яку змінюється фон будь -
+//         якого елемента(наприклад, `div`) на інший колір.
+// const titletextEl = document.querySelector(".titletext");
+// const buttonEl = document.getElementById("button");
+// buttonEl.addEventListener("click", e => {
+//     titletextEl.style.background = "red";
+// })
+///////////////////////////////////////////////////////////////
+// 2. Текст при наведенні: Створити елемент(наприклад, `p`),
+//     і при наведенні на нього мишкою текст змінюється на інший.При виході мишки повертається початковий текст.
+const paragraph = document.createElement("p")
+paragraph.textContent = "Hello world";
+document.body.prepend(paragraph)
+paragraph.addEventListener("mouseover", e => {
+    paragraph.textContent = "Текст змінено"
+});
+paragraph.addEventListener("mouseleave", e => {
+    paragraph.textContent = "Hello world"
+})
