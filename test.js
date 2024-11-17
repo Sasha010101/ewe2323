@@ -253,7 +253,6 @@
 // 4. Копіювання об'єкта
 //    - Вхідні дані:
 
-
 // const person = { name: "Ivan", age: 20, city: "Kyiv", test: [1, 2, 3, 4] };
 // let copyPerson = { ...person }; //shalow copy - не глибока копія
 // copyPerson = { name: "Ivan", age: 20, city: "Kyiv", test: [1, 2, 3, 4] };
@@ -269,7 +268,6 @@
 // copyPerson.test.push('some text value')
 // console.log("person", person);
 // console.log("copyPerson", copyPerson);
-
 
 // let secCopy = structuredClone(person); //deep copy - глибока копія - робить нові посилання для глибоко вкладених масивів чи об'єктів
 // person.test.push('copied by shalow copy');
@@ -291,43 +289,43 @@
 
 //////////////////////////////////////////////////////////////
 // 1. Фільтрація чисел більших за 10
-//    - Вхідні дані: 
-    
+//    - Вхідні дані:
+
 // const numbers = [5, 12, 7, 20, 15, 2];
 // function getBiggerNumber(arr) {
 //          return arr.filter(num => num >10)
 // }
 //      console.log(getBiggerNumber(numbers));
-     
+
 //    - Завдання: Напишіть функцію, яка повертає новий масив з числами, що більші за 10.
 
 // 2. Пошук максимального числа в масиві
-//    - Вхідні дані: 
-    
+//    - Вхідні дані:
+
 // const numbers = [3, 15, 7, 29, 10];
 // function maxNumber(arr) {
 //          return Math.max(...numbers)
 // }
 //      console.log(maxNumber(numbers));
-     
+
 //    - Завдання: Напишіть функцію, яка знаходить максимальне число в масиві.
 /////////////////////////
 
 // 3. Обчислення суми всіх елементів масиву
-//    - Вхідні дані: 
-    
+//    - Вхідні дані:
+
 //      const numbers = [1, 2, 3, 4, 5];
 // function getSumNumbers(arrNumbers) {
 //     return arrNumbers.reduce((sum, number)=> sum + number, 0)
 // }
 // console.log(getSumNumbers(numbers));
-     
+
 //    - Завдання: Напишіть функцію, яка повертає суму всіх чисел у масиві.
 
 ////////////////////
 // 4. Перетворення масиву в рядок
-//    - Вхідні дані: 
-    
+//    - Вхідні дані:
+
 // const words = ["apple", "banana", "cherry"];
 // function getString(arr) {
 //      return arr.join(",")
@@ -336,10 +334,54 @@
 //    - Завдання: Напишіть функцію, яка перетворює масив слів у один рядок, розділений комами.
 
 // 5. Видалення елементів масиву за індексом
-//    - Вхідні дані: 
-    
-//      const arr = [1, 2, 3, 4, 5];
-//      const indexToRemove = 2;
-     
+//    - Вхідні дані:
+
+// const arr = [1, 2, 3, 4, 5];
+// const indexToRemove = 2;
+// function deleteNumberByIndex(number) {
+//   number.splice(indexToRemove, 2)
+// }
+// console.log(deleteNumberByIndex(arr));
+// console.log(arr);
+
+
 //    - Завдання: Напишіть функцію, яка видаляє елемент масиву за вказаним індексом.
 
+
+//////////////////////////////////////////////////////////////////////
+// 1. Зміна тексту елемента за ID
+//    - Завдання: Напишіть функцію, яка змінює текст елемента на сторінці за
+// його id на "Hello World".
+// function changeString(str) {
+//     let textEl = document.getElementById("text");
+//     textEl.textContent = "Hello World"
+
+    
+// }
+// console.log(changeString(''));
+// 2. Додавання класу до елемента при кліку
+//    - Завдання: Напишіть функцію, яка додає клас "clicked" до елемента при кліку на нього.
+// const buttonEl = document.querySelector(".button");
+
+// function addClicked() {
+//     buttonEl.addEventListener("click", event => {
+//         buttonEl.classList.add("clicked")
+//     })
+// }
+// addClicked();
+////////////////////////////
+// 3. Зміна фону сторінки на клік кнопки
+//    - Завдання: Напишіть функцію, яка змінює фон сторінки на червоний при кліку на кнопку з id="changeColor".
+// const bodyColorEl = document.getElementById("bodyColor");
+// let changeColorBtn = document.getElementById("changeColor") ;
+
+// changeColorBtn.addEventListener("click", e => {
+//         bodyColorEl.style.background = "red"
+//     })
+
+// 4. Таблиця: зміна стилю рядка на hover
+//    - Завдання: Напишіть JavaScript, який змінює фон рядка таблиці на сірий при наведенні миші на цей рядок.
+// const textEl = document.querySelector(".text");
+// textEl.addEventListener("mouseover", e => {
+//     textEl.style.background = "blue"
+// })
