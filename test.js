@@ -439,12 +439,46 @@
 ///////////////////////////////////////////////////////////////
 // 2. Текст при наведенні: Створити елемент(наприклад, `p`),
 //     і при наведенні на нього мишкою текст змінюється на інший.При виході мишки повертається початковий текст.
-const paragraph = document.createElement("p")
-paragraph.textContent = "Hello world";
-document.body.prepend(paragraph)
-paragraph.addEventListener("mouseover", e => {
-    paragraph.textContent = "Текст змінено"
-});
-paragraph.addEventListener("mouseleave", e => {
-    paragraph.textContent = "Hello world"
+// const paragraph = document.createElement("p")
+// paragraph.textContent = "Hello world";
+// document.body.prepend(paragraph)
+// paragraph.addEventListener("mouseover", e => {
+//     paragraph.textContent = "Текст змінено"
+// });
+// paragraph.addEventListener("mouseleave", e => {
+//     paragraph.textContent = "Hello world"
+// })
+// 4. Додавання та видалення елементів: Створити кнопку,
+//     яка додає новий елемент(наприклад, li до списку).
+//     Додати ще одну кнопку, яка видаляє останній доданий елемент.
+// const buttonEl = document.getElementById('button');
+// const buttonelement = document.getElementById("button_element");
+// const newElement = document.getElementById("new_element");
+
+// buttonelement.addEventListener("click", e => {
+//     let item = document.createElement("li")//створили елемент
+//     item.textContent = "Change me";
+//     newElement.append(item);//змінили текст
+// })
+    
+
+// buttonEl.addEventListener("click", e => {
+//     // let arr = [1, 2, 3, 4];
+//     // console.log(arr[arr.length-1]);
+    
+//     // // 4?
+//     // console.log(newElement.children[newElement.children.length - 1]);
+    
+//     let item = newElement.children[newElement.children.length - 1] //останній створений
+//     console.log('item', item);
+//     newElement.removeChild(item)
+// })
+///////////////////////////////
+// 5. Зміна класу на прокручуванні:
+//  Додати до сторінки елемент(наприклад, `header`),
+//     який змінює колір або клас при прокручуванні сторінки вниз на певну відстань.
+const headerEl = document.querySelector(".header");
+window.addEventListener('scroll', e => {
+    console.log('scrolling');
+    headerEl.style.background = "blue"
 })
