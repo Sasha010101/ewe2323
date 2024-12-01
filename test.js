@@ -477,8 +477,8 @@
 // 5. Зміна класу на прокручуванні:
 //  Додати до сторінки елемент(наприклад, `header`),
 //     який змінює колір або клас при прокручуванні сторінки вниз на певну відстань.
-const headerEl = document.querySelector(".header");
-window.addEventListener('scroll', e => {
-    console.log('scrolling');
-    headerEl.style.background = "blue"
-})
+// const headerEl = document.querySelector(".header");
+// window.addEventListener('scroll', e => {
+//     console.log('scrolling');
+//     headerEl.style.background = "blue"
+// })
