@@ -344,9 +344,7 @@
 // console.log(deleteNumberByIndex(arr));
 // console.log(arr);
 
-
 //    - Завдання: Напишіть функцію, яка видаляє елемент масиву за вказаним індексом.
-
 
 //////////////////////////////////////////////////////////////////////
 // 1. Зміна тексту елемента за ID
@@ -355,7 +353,6 @@
 // function changeString(str) {
 //     let textEl = document.getElementById("text");
 //     textEl.textContent = "Hello World"
-
 
 // }
 // console.log(changeString(''));
@@ -461,7 +458,6 @@
 //     newElement.append(item);//змінили текст
 // })
 
-
 // buttonEl.addEventListener("click", e => {
 //     // let arr = [1, 2, 3, 4];
 //     // console.log(arr[arr.length-1]);
@@ -482,3 +478,80 @@
 //     console.log('scrolling');
 //     headerEl.style.background = "blue"
 // })
+/* 
+
+Створи HTML-елемент <p> з текстом і за допомогою JavaScript зміни його текст на інший.( по кліку )
+*/
+// let texxtEl = document.getElementById('texxt');
+// texxtEl.addEventListener('click', e => {
+//   texxtEl.style.color = 'skyblue';
+//   texxtEl.textContent = 'Good morning World';
+// });
+
+/* 
+Створи кнопку, яка приховує або показує текст, коли на неї натискають.
+*/
+// let textEl = document.getElementById('text');
+// let buttonEl = document.getElementById('button');
+// let isTextVisible = true;
+// buttonEl.addEventListener('click', e => {
+//   //DRY  - dont repeat yourself
+//   if (isTextVisible) {
+//     textEl.style.display = 'none';
+//     // isTextVisible = false;
+//   } else {
+//     textEl.style.display = 'block';
+//     // isTextVisible = true;
+//   }
+//   isTextVisible = !isTextVisible;
+// });
+
+/* 
+Додай кнопку, яка рахує кількість натискань і виводить це число у параграфі.
+*/
+// let countButtonEl = document.getElementById('countButton');
+// let counterEl = document.getElementById('counter');
+// let count = 0;
+// countButtonEl.addEventListener('click', e => {
+//   //   counterEl.textContent = ++count;
+//   counterEl.textContent = Number(counterEl.textContent.trim()) + 1;
+// });
+/* 
+Створи просту форму з полем для вводу Логіну юзера. 
+Додай перевірку, чи є введений текст довший за 4 символа
+і виводь відповідне повідомлення у тег з з id errorMessage.*/
+let inputEl = document.getElementById('email');
+let errorMessageEl = document.getElementById('errorMessage');
+/* 
+Додай перевірку, чи є введений текст довший за 4 символа
+якщо текст коротший за 3 символа - виводимо в логи текст ( текст короткий)
+якщо ж довжина тексту = 4 або більше, то виводимо в логи - текст нормальний
+ */
+/* 
+і виводь відповідне повідомлення у тег з з id errorMessage
+якщо текст коротший за 3 символа - виводимо в  у тег текст ( текст короткий)
+якщо ж довжина тексту = 4 або більше, то виводимо в  у тег  - текст нормальний
+*/
+/* 
+якщо текст короткий - повідомлення буде червоного кольору
+якщо текст  окей - скриваємо повідомлення 
+і робимо зелену рамку для інпуту
+boxShadow = '0px 0px 10px green';
+*/
+inputEl.style.outline = '0px';
+
+inputEl.addEventListener('input', function (e) {
+  if (this.value.trim().length >= 4) {
+    errorMessageEl.style.display = 'none';
+    this.style.boxShadow = '0px 0px 10px green';
+  } else if (this.value.trim().length <= 3) {
+    this.style.boxShadow = 'none';
+  }
+});
+
+inputEl.addEventListener('blur', function () {
+  if (this.value.trim().length <= 3) {
+    errorMessageEl.textContent = 'Текст короткий';
+    this.style.boxShadow = 'none';
+  }
+});
