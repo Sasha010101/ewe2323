@@ -82,7 +82,7 @@
 //        { name: 'Pavel', age: 22, isActive: false },
 //        { name: 'Maria', age: 19, isActive: true },
 //      ];
-++++++++++++++++++
+
 // function getOldUsers() {
 //     return users.filter(({age}) => age > 18).map(({name}) => name)
 // }
@@ -477,9 +477,7 @@
 // window.addEventListener('scroll', e => {
 //     console.log('scrolling');
 //     headerEl.style.background = "blue"
-<<<<<<< HEAD
-//     )
-=======
+
 // })
 /* 
 
@@ -523,8 +521,8 @@
 Створи просту форму з полем для вводу Логіну юзера. 
 Додай перевірку, чи є введений текст довший за 4 символа
 і виводь відповідне повідомлення у тег з з id errorMessage.*/
-let inputEl = document.getElementById('email');
-let errorMessageEl = document.getElementById('errorMessage');
+// let inputEl = document.getElementById('email');
+// let errorMessageEl = document.getElementById('errorMessage');
 /* 
 Додай перевірку, чи є введений текст довший за 4 символа
 якщо текст коротший за 3 символа - виводимо в логи текст ( текст короткий)
@@ -558,4 +556,4 @@ boxShadow = '0px 0px 10px green';
 //     this.style.boxShadow = 'none';
 //   }
 // });
->>>>>>> c43895513e795f12be6ca0aa2991558b3348cf3e
+
