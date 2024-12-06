@@ -82,7 +82,7 @@
 //        { name: 'Pavel', age: 22, isActive: false },
 //        { name: 'Maria', age: 19, isActive: true },
 //      ];
-
+++++++++++++++++++
 // function getOldUsers() {
 //     return users.filter(({age}) => age > 18).map(({name}) => name)
 // }
@@ -474,11 +474,11 @@
 //     newElement.removeChild(item)
 // })
 ///////////////////////////////
-5. Зміна класу на прокручуванні:
- Додати до сторінки елемент(наприклад, `header`),
-    який змінює колір або клас при прокручуванні сторінки вниз на певну відстань.
-const headerEl = document.querySelector(".header");
-window.addEventListener('scroll', e => {
-    console.log('scrolling');
-    headerEl.style.background = "blue"
-    )
+// 5. Зміна класу на прокручуванні:
+//  Додати до сторінки елемент(наприклад, `header`),
+//     який змінює колір або клас при прокручуванні сторінки вниз на певну відстань.
+// const headerEl = document.querySelector(".header");
+// window.addEventListener('scroll', e => {
+//     console.log('scrolling');
+//     headerEl.style.background = "blue"
+//     )
