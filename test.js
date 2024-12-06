@@ -344,9 +344,7 @@
 // console.log(deleteNumberByIndex(arr));
 // console.log(arr);
 
-
 //    - Завдання: Напишіть функцію, яка видаляє елемент масиву за вказаним індексом.
-
 
 //////////////////////////////////////////////////////////////////////
 // 1. Зміна тексту елемента за ID
@@ -356,7 +354,6 @@
 //     let textEl = document.getElementById("text");
 //     textEl.textContent = "Hello World"
 
-    
 // }
 // console.log(changeString(''));
 // 2. Додавання класу до елемента при кліку
@@ -392,7 +389,7 @@
 // console.log(filtered);
 ///////////////////////////////////////////////////////////////
 // 2. Отримання імен користувачів
-  
+
 //    const users = [
 //      { name: 'Alice', age: 25 },
 //      { name: 'Bob', age: 30 },
@@ -408,12 +405,12 @@
 // console.log(isFruit);
 ///////////////////////////////////////////////////////////////
 // 4. Підрахунок суми чисел
-  
+
 //    const numbers = [10, 20, 30, 40];
 // const sum = numbers.reduce((total, num) => total + num, 0)
 // console.log(sum);
 // 5. Сортування об’єктів за віком
-  
+
 //    const people = [
 //      { name: 'Alice', age: 25 },
 //      { name: 'Bob', age: 20 },
@@ -422,10 +419,10 @@
 // const sortAge = people.sort((a, b) => a.age - b.age);
 // console.log(sortAge);
 
-   // Результат: [
-   //   { name: 'Bob', age: 20 },
-   //   { name: 'Alice', age: 25 },
-   //   { name: 'Charlie', age: 35 }
+// Результат: [
+//   { name: 'Bob', age: 20 },
+//   { name: 'Alice', age: 25 },
+//   { name: 'Charlie', age: 35 }
 // ]
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 1. Зміна стилю елемента при кліку: Створити кнопку,
@@ -460,15 +457,14 @@
 //     item.textContent = "Change me";
 //     newElement.append(item);//змінили текст
 // })
-    
 
 // buttonEl.addEventListener("click", e => {
 //     // let arr = [1, 2, 3, 4];
 //     // console.log(arr[arr.length-1]);
-    
+
 //     // // 4?
 //     // console.log(newElement.children[newElement.children.length - 1]);
-    
+
 //     let item = newElement.children[newElement.children.length - 1] //останній створений
 //     console.log('item', item);
 //     newElement.removeChild(item)
@@ -481,4 +477,85 @@
 // window.addEventListener('scroll', e => {
 //     console.log('scrolling');
 //     headerEl.style.background = "blue"
+<<<<<<< HEAD
 //     )
+=======
+// })
+/* 
+
+Створи HTML-елемент <p> з текстом і за допомогою JavaScript зміни його текст на інший.( по кліку )
+*/
+// let texxtEl = document.getElementById('texxt');
+// texxtEl.addEventListener('click', e => {
+//   texxtEl.style.color = 'skyblue';
+//   texxtEl.textContent = 'Good morning World';
+// });
+
+/* 
+Створи кнопку, яка приховує або показує текст, коли на неї натискають.
+*/
+// let textEl = document.getElementById('text');
+// let buttonEl = document.getElementById('button');
+// let isTextVisible = true;
+// buttonEl.addEventListener('click', e => {
+//   //DRY  - dont repeat yourself
+//   if (isTextVisible) {
+//     textEl.style.display = 'none';
+//     // isTextVisible = false;
+//   } else {
+//     textEl.style.display = 'block';
+//     // isTextVisible = true;
+//   }
+//   isTextVisible = !isTextVisible;
+// });
+
+/* 
+Додай кнопку, яка рахує кількість натискань і виводить це число у параграфі.
+*/
+// let countButtonEl = document.getElementById('countButton');
+// let counterEl = document.getElementById('counter');
+// let count = 0;
+// countButtonEl.addEventListener('click', e => {
+//   //   counterEl.textContent = ++count;
+//   counterEl.textContent = Number(counterEl.textContent.trim()) + 1;
+// });
+/* 
+Створи просту форму з полем для вводу Логіну юзера. 
+Додай перевірку, чи є введений текст довший за 4 символа
+і виводь відповідне повідомлення у тег з з id errorMessage.*/
+let inputEl = document.getElementById('email');
+let errorMessageEl = document.getElementById('errorMessage');
+/* 
+Додай перевірку, чи є введений текст довший за 4 символа
+якщо текст коротший за 3 символа - виводимо в логи текст ( текст короткий)
+якщо ж довжина тексту = 4 або більше, то виводимо в логи - текст нормальний
+ */
+/* 
+і виводь відповідне повідомлення у тег з з id errorMessage
+якщо текст коротший за 3 символа - виводимо в  у тег текст ( текст короткий)
+якщо ж довжина тексту = 4 або більше, то виводимо в  у тег  - текст нормальний
+*/
+/* 
+якщо текст короткий - повідомлення буде червоного кольору
+якщо текст  окей - скриваємо повідомлення 
+і робимо зелену рамку для інпуту
+boxShadow = '0px 0px 10px green';
+*/
+// inputEl.style.outline = '0px';
+
+// inputEl.addEventListener('input', function (e) {
+//   if (this.value.trim().length >= 4) {
+//     errorMessageEl.style.display = 'none';
+//     this.style.boxShadow = '0px 0px 10px green';
+//   } else if (this.value.trim().length <= 3) {
+//     this.style.boxShadow = 'none';
+//   }
+// });
+
+// inputEl.addEventListener('blur', function () {
+//   if (this.value.trim().length <= 3) {
+//     errorMessageEl.textContent = 'Текст короткий';
+//     this.style.boxShadow = 'none';
+//   }
+// });
+>>>>>>> c43895513e795f12be6ca0aa2991558b3348cf3e
