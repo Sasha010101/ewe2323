@@ -538,20 +538,20 @@ let errorMessageEl = document.getElementById('errorMessage');
 і робимо зелену рамку для інпуту
 boxShadow = '0px 0px 10px green';
 */
-inputEl.style.outline = '0px';
+// inputEl.style.outline = '0px';
 
-inputEl.addEventListener('input', function (e) {
-  if (this.value.trim().length >= 4) {
-    errorMessageEl.style.display = 'none';
-    this.style.boxShadow = '0px 0px 10px green';
-  } else if (this.value.trim().length <= 3) {
-    this.style.boxShadow = 'none';
-  }
-});
+// inputEl.addEventListener('input', function (e) {
+//   if (this.value.trim().length >= 4) {
+//     errorMessageEl.style.display = 'none';
+//     this.style.boxShadow = '0px 0px 10px green';
+//   } else if (this.value.trim().length <= 3) {
+//     this.style.boxShadow = 'none';
+//   }
+// });
 
-inputEl.addEventListener('blur', function () {
-  if (this.value.trim().length <= 3) {
-    errorMessageEl.textContent = 'Текст короткий';
-    this.style.boxShadow = 'none';
-  }
-});
+// inputEl.addEventListener('blur', function () {
+//   if (this.value.trim().length <= 3) {
+//     errorMessageEl.textContent = 'Текст короткий';
+//     this.style.boxShadow = 'none';
+//   }
+// });
