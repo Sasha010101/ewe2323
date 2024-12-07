@@ -75,12 +75,9 @@
 // const findCity = user.address.city;
 // console.log(findCity);
 
-
-
 // Очікуваний результат:
 
 // // "Київ"
-
 
 // ---
 
@@ -89,20 +86,17 @@
 
 // Вхідні дані:
 
-const person = {
-  name: "Марія",
-  age: 25,
-  profession: "дизайнер"
-};
-const objectKey = Object.keys(person);
-console.log(objectKey);
-
-
+// const person = {
+//   name: 'Марія',
+//   age: 25,
+//   profession: 'дизайнер',
+// };
+// const objectKey = Object.keys(person);
+// console.log(objectKey);
 
 // Очікуваний результат:
 
 // // ["name", "age", "profession"]
-
 
 // ---
 
@@ -111,13 +105,13 @@ console.log(objectKey);
 
 // Вхідні дані:
 
-// const user = { name: "Іван", age: 30 };
-
+// const user = { name: 'Іван', age: 30 };
+// user.isAdmin = true;
+// console.log(user);
 
 // Очікуваний результат:
 
 // // { name: "Іван", age: 30, isAdmin: true }
-
 
 // ---
 
@@ -127,16 +121,16 @@ console.log(objectKey);
 // Вхідні дані:
 
 // const users = [
-//   { name: "Олег", age: 20 },
-//   { name: "Анна", age: 25 },
-//   { name: "Марія", age: 22 }
+//   { name: 'Олег', age: 20 },
+//   { name: 'Анна', age: 25 },
+//   { name: 'Марія', age: 22 },
 // ];
-
+// const user = users.find(user => user.name === 'Анна');
+// console.log(user.name);
 
 // Очікуваний результат:
 
 // // { name: "Анна", age: 25 }
-
 
 // ---
 
@@ -148,10 +142,65 @@ console.log(objectKey);
 // const obj = {
 //   a: 1,
 //   b: 2,
-//   c: 3
+//   c: 3,
 // };
-
+// const sumAllKeys = Object.keys(obj).length;
+// console.log(sumAllKeys);
 
 // Очікуваний результат:
 
 // // 3
+/////////////////////////////////////////////////////////////////////////////
+
+// ### 1. Додай текст у елемент
+// Додай текст "Привіт, світ!" у <div>.
+
+// HTML:
+// <div id="greeting"></div>
+// JavaScript:
+// // Ваш код
+// Очікуваний результат (HTML після виконання):
+// <div id="greeting">Привіт, світ!</div>
+// ---
+
+// ### 2. Видалення елемента
+// Видали елемент із класом .remove-me.
+
+// HTML:
+// <div class="remove-me">Цей текст потрібно видалити</div>
+// <div>Залишитись</div>
+// JavaScript:
+// // Ваш код
+// Очікуваний результат (HTML після виконання):
+// <div>Залишитись</div>
+// ---
+
+// ### 3. Зміна атрибута
+// Змініть посилання у <a> на "https://google.com".
+
+// HTML:
+// <a id="link" href="#">Перейти</a>
+// JavaScript:
+// // Ваш код
+// Очікуваний результат (HTML після виконання):
+// <a id="link" href="https://google.com">Перейти</a>1
+// ---
+
+// ### 4. Зміна стилів
+// Зробіть фон <div> жовтим.
+
+// HTML:
+// <div id="box" style="width: 100px; height: 100px;"></div>
+// JavaScript:
+// // Ваш код
+// Очікуваний результат (HTML після виконання):
+// <div id="box" style="width: 100px; height: 100px; background-color: yellow;"></div>
+// ---
+
+// ### 5. Додай список у контейнер
+// Створи <ul> і додай до нього три елементи з текстом "Елемент 1", "Елемент 2", "Елемент 3".
+
+// HTML:
+// <div id="listContainer"></div>
+// JavaScript:
+// // Ваш код
