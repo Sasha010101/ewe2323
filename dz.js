@@ -154,9 +154,10 @@
 
 // ### 1. Додай текст у елемент
 // Додай текст "Привіт, світ!" у <div>.
-
+// const greetingEl = document.getElementById("greeting")
+// greetingEl.textContent = "Привіт, світ!"
 // HTML:
-// <div id="greeting"></div>
+// 
 // JavaScript:
 // // Ваш код
 // Очікуваний результат (HTML після виконання):
@@ -165,8 +166,10 @@
 
 // ### 2. Видалення елемента
 // Видали елемент із класом .remove-me.
+// const removeMe = document.querySelector(".remove-me");
+// removeMe.textContent = "";
+// removeMe.classList.remove("remove-me");
 
-// HTML:
 // <div class="remove-me">Цей текст потрібно видалити</div>
 // <div>Залишитись</div>
 // JavaScript:
@@ -182,13 +185,16 @@
 // <a id="link" href="#">Перейти</a>
 // JavaScript:
 // // Ваш код
+// const linkEl = document.getElementById("link");
+// linkEl.href = "https://google.com";
 // Очікуваний результат (HTML після виконання):
 // <a id="link" href="https://google.com">Перейти</a>1
 // ---
 
 // ### 4. Зміна стилів
 // Зробіть фон <div> жовтим.
-
+// const boxEl = document.getElementById("box");
+// boxEl.style.background = "yellow";
 // HTML:
 // <div id="box" style="width: 100px; height: 100px;"></div>
 // JavaScript:
