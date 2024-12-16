@@ -4,11 +4,52 @@
 // Порахуй, скільки разів кожен елемент з'являється у масиві.
 
 // Вхідні дані:
-// const arr = ["яблуко", "банан", "яблуко", "груша", "яблуко", "груша"];
+const arr = [
+  'яблуко',
+  'банан',
+  'яблуко',
+  'банан',
+  'банан',
+  'груша',
+  'яблуко',
+  'груша',
+  'груша',
+  'яблуко',
+  'груша',
+];
 // // Очікуваний результат:
 // // { яблуко: 3, банан: 1, груша: 2 }
 // ---
 
+/* 
+false -> false
+undefined
+null
+''
+NaN
+0
+-0
++0
+*/
+// const countElementRepeats = strArr => {
+//   let result = {};
+
+//   strArr.forEach(strItem => {
+//     if (result[strItem]) {
+//       result[strItem] += 1;
+//     } else {
+//       result[strItem] = 1;
+//     }
+//   });
+
+//   return result;
+// };
+
+// console.log(countElementRepeats(arr));
+// let obj = {};
+// obj.test  = false;
+// obj['full name'] = 10;
+// console.log('obj', obj);
 // ### 2. Пошук найбільшого числа
 // Знайди максимальне число у масиві.
 
@@ -157,7 +198,7 @@
 // const greetingEl = document.getElementById("greeting")
 // greetingEl.textContent = "Привіт, світ!"
 // HTML:
-// 
+//
 // JavaScript:
 // // Ваш код
 // Очікуваний результат (HTML після виконання):
@@ -205,8 +246,25 @@
 
 // ### 5. Додай список у контейнер
 // Створи <ul> і додай до нього три елементи з текстом "Елемент 1", "Елемент 2", "Елемент 3".
+// const listContainerEl = document.getElementById("listContainer");
+// const ulList = document.createElement('ul');
+// for (let i = 1; i <=3; i++) {
+//     const liEl = document.createElement("li")
+//     liEl.textContent = `Елемент ${i}`;
+//     ulList.appendChild(liEl);
+// }
 
-// HTML:
+// let count = 0;
+// while( count < 3 ){
+//     const liEl = document.createElement("li")
+//     liEl.textContent = `Елемент ${count+1}`;
+//     ulList.appendChild(liEl);
+
+//     count++
+// }
+
+// listContainerEl.appendChild(ulList);
+// HTML:;
 // <div id="listContainer"></div>
 // JavaScript:
 // // Ваш код
