@@ -33,8 +33,24 @@
 //     return name;
 // }
 // getName("Ivan")
-function calculateTotalPrice (orderedQuantity, pricePerItem) {
-  return orderedQuantity * pricePerItem;
-};
+// function calculateTotalPrice (orderedQuantity, pricePerItem) {
+//   return orderedQuantity * pricePerItem;
+// };
 
-console.log(calculateTotalPrice(10, 8));
+// console.log(calculateTotalPrice(10, 8));
+function checkAge(age) { 
+    if (age >= 18) {
+        age = "You are adult:";
+        return age;
+    } else {
+      return "Lets go to school";
+}
+}
+console.log(checkAge(13));
+console.log(checkAge(19));
+console.log(checkAge(11));
+console.log(checkAge(22));
+
+
+
+
