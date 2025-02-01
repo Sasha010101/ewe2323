@@ -3,7 +3,6 @@
 //////////////////////////////////////////
 // function multiplyNumbers(a, b, c, d) {
 //     console.log(`Hello world: ${a * b * c + d}`);
-
 // }
 // multiplyNumbers(2,4,3,7);
 // multiplyNumbers(5,6,3,1);
@@ -13,18 +12,14 @@
 // function multiplyNumbers(a, b, c, d) {
 //     const calculate = a * b * c + d;
 //     return calculate;
-
 // }
 // const sum = multiplyNumbers(2, 4, 3, 7);
 // console.log(sum);
 //////////////////////////////////////
 // function multiplyNumbers(a, b, c) {
-
 //     return a + b + c;
-
 // }
 // console.log(multiplyNumbers(2, 4, 3));
-
 // multiplyNumbers(5,6,3,1);
 // multiplyNumbers(5,6,2,4);
 // multiplyNumbers(4,4,7,9);
@@ -36,17 +31,16 @@
 // function calculateTotalPrice (orderedQuantity, pricePerItem) {
 //   return orderedQuantity * pricePerItem;
 // };
-
 // console.log(calculateTotalPrice(10, 8));
-// function checkAge(age) {
-//     if (age >= 18) {
-//         age = "You are adult:";
-//         return age;
-//     } else {
-//       return "Lets go to school";
-// }
-// }
-// console.log(checkAge(13));
-// console.log(checkAge(19));
-// console.log(checkAge(11));
-// console.log(checkAge(22));
+function checkAge(age) {
+  if (age >= 18) {
+    age = 'You are adult:';
+    return age;
+  } else {
+    return 'Lets go to school';
+  }
+}
+console.log(checkAge(13));
+console.log(checkAge(19));
+console.log(checkAge(11));
+console.log(checkAge(22));
