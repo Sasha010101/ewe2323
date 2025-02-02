@@ -38,18 +38,18 @@
 // };
 
 // console.log(calculateTotalPrice(10, 8));
-function checkAge(age) { 
-    if (age >= 18) {
-        age = "You are adult:";
-        return age;
-    } else {
-      return "Lets go to school";
-}
-}
-console.log(checkAge(13));
-console.log(checkAge(19));
-console.log(checkAge(11));
-console.log(checkAge(22));
+function checkAge(age, start, ) { 
+//     if (age > start && start < age ) {
+//         age = "You are adult:";
+//         return age;
+//     } else {
+//       return "Lets go to school";
+// }
+// }
+// console.log(checkAge(27, 25));
+// console.log(checkAge(19,27));
+// console.log(checkAge(11,22));
+// console.log(checkAge(22,11));
 
 
 
