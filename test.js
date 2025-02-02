@@ -1,4 +1,4 @@
- // const arrNumbers = [1, 4, 22, 16, 21, 7, 19, 11, 99];
+// const arrNumbers = [1, 4, 22, 16, 21, 7, 19, 11, 99];
 // arrNumbers.forEach((number) => {
 //     if (number % 2 === 0) {
 //          console.log(number * 4);
@@ -550,11 +550,19 @@ boxShadow = '0px 0px 10px green';
 //   }
 // });
 
-inputEl.addEventListener('blur', function () {
-  if (this.value.trim().length <= 3) {
-    errorMessageEl.textContent = 'Текст короткий';
-    this.style.boxShadow = 'none';
-  }
-});
+// inputEl.addEventListener('blur', function () {
+//   if (this.value.trim().length <= 3) {
+//     errorMessageEl.textContent = 'Текст короткий';
+//     this.style.boxShadow = 'none';
+//   }
+// });
 
 // !====================================
+const isBlocked = false;
+const canChat = !isBlocked; // !false -> true
+
+if (canChat) {
+  console.log('Can type in chat!');
+} else {
+  console.log('Blocked from typing in chat!');
+}
