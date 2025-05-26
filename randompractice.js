@@ -341,3 +341,184 @@
 //   console.log(x * y * z);
 // };
 // multiply(5,5,5)
+
+
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   isPublic: true,
+//   rating: 8.38,
+// };
+// book.author = "Andjey Sapkovski";
+// const bookAuthor = book.author;
+// console.log(bookAuthor);
+
+
+// const user = {
+//   name: "Jacques Gluke",
+//   tag: "jgluke",
+//   location: {
+//     country: "Jamaica",
+//     city: "Ocho Rios",
+//   },
+//   hobbies: ["swimming", "music", "sci-fi"],
+// };
+// user.location.country = "Ukraine";
+// const location = user.location.country;
+// // console.log(location);
+
+
+// const hobbies = user.hobbies;
+// console.log(hobbies[1]); // ["swimming", "music", "sci-fi"]
+
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   isPublic: true,
+//   rating: 8.38,
+// };
+
+
+// // console.log(book.price); // "The Last Kingdom"
+// // console.log(book["title"]); // "The Last Kingdom"
+
+
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   isPublic: true,
+//   rating: 8.38,
+// };
+// const nameAuthor = "author";
+// // console.log(book.nameA"uthor);
+// console.log(book[nameAuthor]);
+
+// console.log(book.price); // "The Last Kingdom"
+// console.log(book["title"]); // "The Last Kingdom"
+
+// const apartment = {
+//   imgUrl: "https://via.placeholder.com/640x480",
+//   descr: "Spacious apartment in the city center",
+//   rating: 4.7,
+//   price: 5000,
+//   tags: ["premium", "promoted", "top", "trusted"],
+//   owner: {
+//     name: "Henry Sibola",
+//     phone: "982-126-1588",
+//     email: "henry.carter@aptmail.com",
+//   },
+// };
+// apartment.owner.address = "Kyivska 98";
+// apartment.owner.location = {
+//     city: "Kyiv",
+//     street: "the best",
+//     number: 26,
+// };
+// console.log(apartment);
+
+// const person = "name";
+// const human = "surname";
+// const obj = {
+//     [person]: "Apolo",
+//     [human]: "Mhitarian"
+// };
+// console.log(obj[person]);
+
+
+
+
+
+// const apartment = {
+//   imgUrl: "https://via.placeholder.com/640x480",
+//   descr: "Spacious apartment in the city center",
+//   rating: 4.7,
+//   price: 5000,
+//   tags: ["premium", "promoted", "top", "trusted"],
+//   owner: {
+//     name: "Henry Sibola",
+//     phone: "982-126-1588",
+//     email: "henry.carter@aptmail.com",
+//   },
+// };
+// apartment.owner.address = "Kyivska 98";
+// apartment.owner.location = {
+//     city: "Kyiv",
+//     street: "the best",
+//     number: 26,
+// };
+
+// for (const key in apartment.owner) {
+//     console.log(apartment.owner);
+    
+// }
+
+
+// const book = {
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   rating: 8.38,
+// };
+// const keys = Object.keys(book);
+
+// for (const key of keys) {
+//   console.log(key); // Ключ
+//   console.log(book[key]); // Значення властивості
+// }
+
+
+
+
+
+
+
+// const apartment = {
+//   imgUrl: "https://via.placeholder.com/640x480",
+//   descr: "Spacious apartment in the city center",
+//   rating: 4.7,
+//   price: 5000,
+//   tags: ["premium", "promoted", "top", "trusted"],
+//   owner: {
+//     name: "Henry Sibola",
+//     phone: "982-126-1588",
+//     email: "henry.carter@aptmail.com",
+//   },
+// };
+// apartment.owner.address = "Kyivska 98";
+// apartment.owner.location = {
+//     city: "Kyiv",
+//     street: "the best",
+//     number: 26,
+// };
+// let keyy = [];
+// let values = [];
+// const objOne = Object.keys(apartment);
+// for (let key of objOne) {
+//     keyy.push(key);
+//     values.push(apartment[key]);
+// }
+// console.log(keyy);
+// console.log(values);
+
+// function getObj(obj) {
+//     let objKeys = Object.values(obj);
+//     return objKeys.length;
+// }
+// const book = {
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   rating: 8.38,
+// };
+// console.log(getObj(book));
+
+function getSumObj(obj) {
+    let sum = 0;
+    let salarys = Object.values(obj);
+    for (let salary of salarys){
+        sum += salary;
+    } return sum;
+    
+}
+console.log(getSumObj({ kiwi: 400, poly: 50, ajax: 850 }));
