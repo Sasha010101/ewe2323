@@ -557,12 +557,115 @@ boxShadow = '0px 0px 10px green';
 //   }
 // });
 
-// !====================================
-const isBlocked = false;
-const canChat = !isBlocked; // !false -> true
 
-if (canChat) {
-  console.log('Can type in chat!');
-} else {
-  console.log('Blocked from typing in chat!');
-}
+// const isBlocked = true;
+// const canChat = !isBlocked;
+
+// if (canChat) {
+//   console.log('Can type in chat!');
+// } else {
+//   console.log('Blocked from typing in chat!');
+// }
+// function checkName(fullName, firstName) {
+//   return fullName.toLowerCase().includes(firstName.toLowerCase())
+// }
+// console.log(checkName('Ivan Ivanov', 'Anatoliy'));
+// console.log(checkName('Oleg Icanov', 'Oleg'));
+// console.log(checkName('Anton Ivanov', 'Anatoliy'));
+// console.log(checkName('Oleksiy Ivanov', 'Oleksiy'));
+// function getLastWordsOfName(name, words) {
+//   if (name.endsWith(words)) {
+//     return "everything correct"
+//   } else {
+//     return "incorect"
+//   }
+// }
+// console.log(getLastWordsOfName("Sasha", "ash"));
+// console.log(getLastWordsOfName("Masha", "asha"));
+// console.log(getLastWordsOfName("Pasha", "sh"));
+// console.log(getLastWordsOfName("Dasha", "asha"));
+// const message = "Goog morning world";
+// const index = message.indexOf("morning")
+// console.log(index);
+// function getFileName(file) {
+//   const words = file.indexOf(".");
+//   if (words !== -1) {
+//     return file.slice(0, words).trim(file)
+//   } else {
+//     return file.trim(file);
+//   }
+// }
+// console.log(getFileName(" js"));
+// console.log(getFileName(" react.com "));
+// console.log(getFileName("css.com"));
+// console.log(getFileName(" vue.com" ));
+// function getInf(name, surname) {
+//   return `Hello person: ${name.trim(name)} ${surname.trim(surname)}}`
+// }
+// console.log(getInf("   Sasha ", "Lymanets   "));
+// console.log(getInf("   Ivan  ", "   Ivanov  "));
+// console.log(getInf("  Oleg ", "  Gudz  "));
+// let clientCounter = 18;
+// const maxClients = 25;
+
+// while (clientCounter < maxClients) {
+//     console.log(clientCounter);
+//     clientCounter += 2;
+// }
+// function getNumbers(first, second) {
+//     let counter = first;
+//     while (counter < second) {
+//         console.log(counter);
+//         counter += 1;
+        
+//     }
+// }
+// console.log(getNumbers(8,24));
+// function getNumber(number) {
+//     let total = 0;
+//     let i = 1;
+//     while (i <= number) {
+//         total += i;
+//         i += 1;
+//     }
+//     return total;
+// }
+// console.log(getNumber(2));
+// console.log(getNumber(5));
+// console.log(getNumber(6));
+// console.log(getNumber(7));
+
+// function findNumber(start, end, divisor) {
+//   for(let i = start; i <= end; i += 1){
+//     if(i % divisor === 0 ) {
+//      return i;
+//     }
+//   }
+   
+// }
+// function getElements(array) {
+//     if (array.length === 0) {
+//         return [];
+//     }
+//     return [array[0], array[array.length - 1]];
+// }
+// console.log(getElements([1, 2, 3, 4, 5]));
+// const a = ["Mango", "Poly"];
+// const b = a;
+// console.log(a); // ["Mango", "Poly"]
+// console.log(b); // ["Mango", "Poly"]
+// const c = b;
+// c[1] = "Jacob";
+// console.log(a); // ["Mango", "Jacob"]
+// console.log(b)
+// console.log(c);
+// const ar = [1, 2, 3];
+// const ar1 = [5, 6, 89];
+// const res = ar.concat(ar1);
+
+// const ar2 = res.join("-.-");
+
+
+// const ar3 = ar2.split("-.-")
+// console.log(ar3);
+

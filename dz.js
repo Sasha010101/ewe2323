@@ -258,3 +258,11 @@ NaN
 // <div id="listContainer"></div>
 // JavaScript:
 // // Ваш код
+// function getStr(str, length) {
+//     return str.slice(1, length)
+// }
+// console.log(getStr("Hello everybody", 5)); 
+// console.log(getStr("Hello everybody", 8)); 
+// console.log(getStr("Hello everybody", 3)); 
+// console.log(getStr("Hello everybody", 1)); 
+// console.log(getStr("Hello everybody", 10)); 
