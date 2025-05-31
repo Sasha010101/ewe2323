@@ -4,27 +4,146 @@
 
 // Створення об'єкта: Створіть об'єкт person, який містить властивості ім'я, вік та
 // професія.
+// const person = {
+//     name: "Sasha",
+//     age: 26,
+//     job: "soccer",
+// }
+// console.log(person);
+
 
 // Доступ до властивостей: Виведіть на консоль ім'я створеного об'єкта person.
+// const person = {
+//     name: "Sasha",
+//     age: 26,
+//     job: "soccer",
+// }
+// console.log(person.name);
+
 
 // Зміна властивостей: Змініть вік в об'єкті person на нове значення.
+// const person = {
+//     name: "Sasha",
+//     age: 26,
+//     job: "soccer",
+// }
+// person.age = 35;
+// console.log(person);
+
+
 
 // Додавання нових властивостей: Додайте до об'єкта person властивість місце_роботи
 // зі значенням.
+// const person = {
+//     name: "Sasha",
+//     age: 26,
+//     job: "soccer",
+// }
+// person.age = 35;
+// person.spaceJob = "Kyiv";
+// console.log(person);
+
 
 // Видалення властивостей: Видаліть властивість професія з об'єкта person.
+// const person = {
+//     name: "Sasha",
+//     age: 26,
+//     job: "soccer",
+// }
+// person.age = 35;
+// person.spaceJob = "Kyiv";
+// delete person.job;
+// console.log(person);
+
+
 
 // Пошук властивостей: Перевірте, чи існує властивість професія в об'єкті person.
+
+// const person = {
+//     name: "Sasha",
+//     age: 26,
+//     job: "soccer",
+// }
+// person.age = 35;
+// person.spaceJob = "Kyiv";
+// delete person.job;
+// console.log(person.job);
+
 
 // Зведення декількох об'єктів: Створіть ще один об'єкт friend, який містить
 // інформацію про вашого друга. Потім об'єднайте властивості об'єкта friend з
 // об'єктом person.
 
+// const person = {
+//     name: "Sasha",
+//     age: 26,
+//     job: "soccer",
+// }
+// person.age = 35;
+// person.spaceJob = "Kyiv";
+// delete person.job;
+// const friend = {
+//     fullName: "Anton Antonov",
+//     city: "Lviv",
+//     job: "dancer",
+// }
+// const newObj = {...person, ... friend}
+// console.log(newObj);
+
+
 // Перебір властивостей: Виведіть всі властивості об'єкта person на консоль у
 // вигляді ключ-значення.
+// const person = {
+//     name: "Sasha",
+//     age: 26,
+//     job: "soccer",
+// }
+// person.age = 35;
+// person.spaceJob = "Kyiv";
+// delete person.job;
+// const friend = {
+//     fullName: "Anton Antonov",
+//     city: "Lviv",
+//     job: "dancer",
+// }
+// const newObj = { ...person, ...friend };
+// for (let key in newObj) {
+//     console.log(`${key} : ${newObj[key]}`);
+    
+// }
+
+
+
+
 
 // Методи об'єкта: Додайте до об'єкта person метод привітання, який буде виводити
 // вітання з іменем особи.
+// const person = {
+//     name: "Sasha",
+//     age: 26,
+//     job: "soccer",
+//     congratulation() {
+//         console.log(`congratulation dear ${this.name}`);
+        
+//     }
+// };
+
+// person.age = 35;
+// person.spaceJob = "Kyiv";
+// delete person.job;
+// const friend = {
+//     fullName: "Anton Antonov",
+//     city: "Lviv",
+//     job: "dancer",
+// }
+// const newObj = { ...person, ...friend };
+// for (let key in newObj) {
+//     console.log(`${key} : ${newObj[key]}`);
+    
+// }
+// person.congratulation()
+
+
 
 // Застосування Object.keys(): Виведіть на консоль масив зі всіма ключами об'єкта
 // person за допомогою функції Object.keys().

@@ -450,11 +450,11 @@
 //     number: 26,
 // };
 
-// for (const key in apartment.owner) {
-//     console.log(apartment.owner);
+// for (const key in apartment.owner.location) {
+//     console.log(`${key} :${apartment.owner.location[key]}`);
     
 // }
-
+// //
 
 // const book = {
 //   author: "Bernard Cornwell",
@@ -509,16 +509,199 @@
 // const book = {
 //   author: "Bernard Cornwell",
 //   genres: ["historical prose", "adventure"],
-//   rating: 8.38,
+//     rating: 8.38,
+//   age: 38,
 // };
 // console.log(getObj(book));
 
-function getSumObj(obj) {
-    let sum = 0;
-    let salarys = Object.values(obj);
-    for (let salary of salarys){
-        sum += salary;
-    } return sum;
+
+
+// function getSumObj(obj) {
+//     let sum = 0;
+//     let salarys = Object.values(obj);
+//     console.log(salarys);
     
-}
-console.log(getSumObj({ kiwi: 400, poly: 50, ajax: 850 }));
+//     for (let salary of salarys){
+//         sum += salary;
+//     } return sum;
+    
+// }
+// console.log(getSumObj({ kiwi: 400, poly: 50, ajax: 850 }));
+// const colors = [
+//   { hex: "#f44336", rgb: "244,67,54" },
+//   { hex: "#2196f3", rgb: "33,150,243" },
+//   { hex: "#4caf50", rgb: "76,175,80" },
+//   { hex: "#ffeb3b", rgb: "255,235,59" },
+// ];
+// const firs = [];
+// const second = [];
+// for (let color of colors) {
+//     firs.push(color.hex);
+//     second.push(color.rgb)
+// }
+// console.log(firs);
+// console.log(second);
+
+
+// const books = [
+//   { title: "The Last Kingdom", author: "Bernard Cornwell" },
+//   { title: "Beside Still Waters", author: "Robert Sheckley" },
+//   { title: "The Dream of a Ridiculous Man", author: "Fyodor Dostoevsky" }
+// ];
+
+// const authorToSearchFor = "Robert Sheckley";
+
+// for (const book of books) {
+// 	if(book.author === authorToSearchFor) {
+// 		console.log(book);
+//         console.log(book.title)
+//         console.log(book.author)
+// 		console.log(book.rating)
+// 	}
+// }
+
+// function getProductPrice(productName) {
+//     const products = [
+//         { name: "Radar", price: 1300, quantity: 4 },
+//         { name: "Scanner", price: 2700, quantity: 3 },
+//         { name: "Droid", price: 400, quantity: 7 },
+//         { name: "Grip", price: 1200, quantity: 9 },
+//     ];
+//     for (let product of products) {
+//         if (product.name === productName) {
+//             return product.quantity;
+//          }
+
+//     }
+//     return "ZERo";
+// }
+// console.log(getProductPrice("Radar"));
+// console.log(getProductPrice("Crispy"));
+
+
+
+//     const products = [
+//         { name: "Radar", price: 1300, quantity: 4 },
+//         { name: "Scanner", price: 2700, quantity: 3 },
+//         { name: "Droid", price: 400, quantity: 7 },
+//         { name: "Grip", price: 1200, quantity: 9 },
+//     ];
+//     const element = [];
+// for (let item of products) {
+//         element.push(item.quantity)
+// };
+// console.log(element);
+
+
+
+// const books = [
+//   { title: "The Last Kingdom", author: "Bernard Cornwell", rating: 8 },
+//   { title: "Beside Still Waters", author: "Robert Sheckley", rating: 16 },
+//   { title: "The Dream of a Ridiculous Man", author: "Fyodor Dostoevsky", rating: 3 }
+// ];
+// let sum = 0;
+// for (let book of books) {
+//     sum += book.rating;
+   
+    
+// }
+//     console.log(sum / books.length);
+
+// function getAllPropValues(propName) {
+//     const products = [
+//         { name: "Radar", price: 1300, quantity: 4 },
+//         { name: "Scanner", price: 2700, quantity: 3 },
+//         { name: "Droid", price: 400, quantity: 7 },
+//         { name: "Grip", price: 1200, quantity: 9 },
+//     ];
+//     let propValues = [];
+//     for (let product of products) {
+//         if (propName in product) {
+//             propValues.push(product[propName])
+//         }
+//     }return propValues;
+//     }
+    
+
+// console.log(getAllPropValues("name"));
+// console.log(getAllPropValues("surname"));
+// console.log(getAllPropValues('price'));
+
+
+// function calculateTotalPrice(productName) {
+//     const products = [
+//         { name: "Radar", price: 1300, quantity: 4 },
+//         { name: "Scanner", price: 2700, quantity: 3 },
+//         { name: "Droid", price: 400, quantity: 7 },
+//         { name: "Grip", price: 1200, quantity: 9 },
+//     ];
+//     for (let product of products) {
+//         if (productName === product.name) {
+//             return product.price * product.quantity;
+//         }
+//     }
+//     return `We didn't find ${productName} `;
+// }
+
+// console.log(calculateTotalPrice("Radar"));
+// console.log(calculateTotalPrice("Aloha"));
+// console.log(calculateTotalPrice("Grip"));
+
+// const atTheOldToad = {
+// potions: [],
+// getPotions(){
+// return "List of all available potions"
+// },
+// addPotion(potionName){
+//     this.potions.push(potionName);
+//     return `Hello ${potionName}`;
+// }
+// }
+// console.log(atTheOldToad.addPotion("Grigoriy"));
+// const bookShelf = {
+//   books: [
+//     { title: "The Last Kingdom", rating: 8 },
+//     { title: "The Mist", rating: 6 },
+//   ],
+// changeRating(objName, newRating) {
+//         for (const book of this.books) {
+//             if (book.title === objName) {
+//                 book.rating = newRating;
+//                 return book;
+//         }
+//     }
+//    return `We didn't fint "${objName}"`;
+//     }
+// };
+// console.log(bookShelf.changeRating("The Mist", 9));
+// console.log(bookShelf.changeRating("The Stick", 4));
+// console.log(bookShelf.changeRating("The Last Kingdom", 4));
+
+// //  приклад 1
+// const numbers = [1, 2, 3];
+// const newNumbers = [4, 5, 6, ...numbers ];
+
+// // приклад 2
+// const numbers = [1, 2, 3];
+// const newNumbers = [...numbers, 4, 5, 6,];
+
+
+// function foo(num, ...args) {
+//     let sum = num;
+//     for (const arg of args) {
+//         sum += arg;
+//     }
+//     return sum;
+// }
+// console.log(foo(14, 30, 10));
+
+
+// function etExtremeScores(rest) {
+//     return {
+//         best: Math.max(...rest),
+//         worst: Math.min(...rest),
+//     }
+// }
+
+// console.log(etExtremeScores([89, 64, 42, 17, 93, 51, 26, 14, 2, 1, 18, 78]));
+
