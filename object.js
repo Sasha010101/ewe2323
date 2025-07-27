@@ -18,7 +18,7 @@
 //     age: 26,
 //     job: "soccer",
 // }
-// console.log(person.name);
+// console.log(person["name"]);
 
 
 // Зміна властивостей: Змініть вік в об'єкті person на нове значення.
@@ -148,6 +148,23 @@
 // Застосування Object.keys(): Виведіть на консоль масив зі всіма ключами об'єкта
 // person за допомогою функції Object.keys().
 
+// const person = {
+//     name: "Sasha",
+//     age: 26,
+//     job: "soccer",
+// }
+// person.age = 35;
+// person.spaceJob = "Kyiv";
+// delete person.job;
+// const friend = {
+//     fullName: "Anton Antonov",
+//     city: "Lviv",
+//     job: "dancer",
+// }
+// const newObj = { ...person, ...friend };
+// console.log(Object.keys(newObj));
+
+
 // ---
 
 // ## ЗАДАЧІ
@@ -156,6 +173,11 @@
 // Напиши функцію, яка створює об'єкт з ім'ям і віком.
 // Функція повинна приймати два аргументи: ім'я (рядок) і вік (число).
 // Поверни цей об'єкт.
+// function getObj(name, age) {
+//     return {name, age,}
+// }
+// console.log(getObj("Sasha", 26));
+
 // ```
 
 // ---
@@ -164,6 +186,13 @@
 // Напиши функцію, яка приймає об'єкт і додає до нього нову властивість "address" (рядок).
 // Поверни оновлений об'єкт.
 // ```
+// function getOBJ(obj, address) {
+//     obj.address = address;
+//     return obj;
+// }
+// const person = {name: "Sasha", age: 26, };
+// const updateObj = getOBJ(person, "Zhytomyr, Ukraine");
+// console.log(updateObj);
 
 // ---
 
@@ -171,42 +200,98 @@
 // Напиши функцію, яка приймає об'єкт і новий вік.
 // Функція повинна змінити значення властивості "age" в об'єкті на нове значення.
 // Поверни оновлений об'єкт.
+
+
+// function getOBJ(obj, newAge) {
+//     obj.age = newAge;
+//     return obj;
+// }
+// const person = {name: "Sasha", age: 26, };
+// const updateObj = getOBJ(person, 27);
+// console.log(updateObj);
 // ```
 
 // ---
 
-// ```
+// // ```
 // Напиши функцію, яка приймає об'єкт і видаляє з нього властивість "age".
 // Поверни оновлений об'єкт.
 // ```
+// function getObj(obj) {
+//     delete obj.age;
+//     return obj;
+// }
+// const person = { name: "Sasha", age: 26, };
+// console.log(getObj(person));
 
 // ---
 
 // ```
-// Напиши функцію, яка приймає об'єкт і повертає значення властивості "name".
-// ```
-
-// ---
+// // Напиши функцію, яка приймає об'єкт і повертає значення властивості "name".
+// // // ```
+//         function getObj(obj) {
+//             return obj[key]; якщо змінна без лапок, якщо без то ["name"]
+// }
+//         const key = "name"
+//         const person = { name: "Sasha", age: 26, };
+//         console.log(getObj(person))
+// // // ---
 
 // ```
 // Напиши функцію, яка приймає об'єкт і повертає true, якщо властивість "address" існує в об'єкті, і false, якщо ні.
 // ```
-
-// ---
+// ```
+// function chekObj(obj) {
+//         return Boolean(obj.address);
+// }
+// const person = { name: "Sasha", age: 26,};
+// console.log(chekObj(person));
+// але можна і використати умову if (obj.address) {
+//     return true /або фолс після умови
+// }
+// // ---
 
 // ```
 // Напиши функцію, яка приймає два об'єкти і об'єднує їх в один.
 // Якщо у об'єктів є однакові властивості, значення другого об'єкта мають замінити значення першого.
 // Поверни результат.
 // ```
+// function getObj(obj1, obj2) {
+//     return { ...obj1, ...obj2 }
+// };
 
-// ---
+
+// const person = {
+//     name: "Sasha",
+//     age: 26,
+//     job: "soccer",
+// };
+// const person2 = {
+//     name: "Ivan",
+//     heigth: 184,
+//     city: "Lviv",
+// }
+//     console.log(getObj(person, person2));
+   
+    
+
+
+
 
 // ```
 // Напиши функцію, яка створює об'єкт з трьома властивостями: ім'ям, віком і адресою.
 // Якщо ім'я та вік не передані, встанови їх значення за замовчуванням ("Unknown", 0 відповідно).
 // Поверни об'єкт.
 // ```
+// function createObj(name = "Unknown", age = 0, address = "Unknown") {
+
+//     return { name, age, address };
+    
+    
+// }
+// console.log(createObj("Sasha", 26, "Kyiv"));
+// console.log(createObj());
+
 
 // ---
 
@@ -443,4 +528,15 @@
 //   - `isPhone(str)` - метод, що приймає рядок та перевіряє, чи є він коректним
 //     номером телефону. Повертає `true` або `false`.
 
-// ---
+// --
+
+
+const person = {
+    name: "Sasha",
+    age: 26,
+    job: "soccer",
+    chengeObj() {
+        return this["key"];
+}
+}
+console.log(person.chengeObj());
