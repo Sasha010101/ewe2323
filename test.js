@@ -557,7 +557,6 @@ boxShadow = '0px 0px 10px green';
 //   }
 // });
 
-
 // const isBlocked = true;
 // const canChat = !isBlocked;
 
@@ -617,7 +616,7 @@ boxShadow = '0px 0px 10px green';
 //     while (counter < second) {
 //         console.log(counter);
 //         counter += 1;
-        
+
 //     }
 // }
 // console.log(getNumbers(8,24));
@@ -641,7 +640,7 @@ boxShadow = '0px 0px 10px green';
 //      return i;
 //     }
 //   }
-   
+
 // }
 // function getElements(array) {
 //     if (array.length === 0) {
@@ -665,7 +664,263 @@ boxShadow = '0px 0px 10px green';
 
 // const ar2 = res.join("-.-");
 
-
 // const ar3 = ar2.split("-.-")
 // console.log(ar3);
+////////////!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!/////
+// function isEnoughCapacity(products) {
+//   let total = 0;
+//   let sum = Object.values(products);
+//   for (let arr of sum) {
+//     total += arr;
+//   }
+//   return total;
+// }
 
+// console.log(isEnoughCapacity({ apples: 2, grapes: 3, carrots: 1 })); // true
+
+// console.log(isEnoughCapacity({ apples: 4, grapes: 6, lime: 16 })); // false
+
+// console.log(isEnoughCapacity({ apples: 1, lime: 5, tomatoes: 3 })); // true
+
+// console.log(isEnoughCapacity({ apples: 18, potatoes: 5, oranges: 2 })); // false
+// const obj = {
+//   name: [],
+//   surname: [],
+//   newName(first) {
+//     this.name.push(first);
+//     return `Hello ${first}`;
+//   },
+//   newSurname(second) {
+//     this.surname.push(second);
+//     return `${second}`;
+//   },
+// };
+// console.log(obj.newName('Ivan'));
+// console.log(obj.newSurname('Derenko'));
+
+// const bookShelf = {
+//   books: [
+//     { title: 'The Last Kingdom', rating: 8 },
+//     { title: 'The Mist', rating: 6 },
+//   ],
+//   changeRating(name, newRating) {
+//     for (let book of this.books) {
+//       if (book.title === name) {
+//         book.rating = newRating;
+//         return book;
+//       }
+//     }
+//     return 'alya alyu';
+//   },
+// };
+// console.log(bookShelf.changeRating('The Mist', 2));
+// console.log(bookShelf.changeRating('The Stick', 1));
+// console.log(bookShelf.changeRating('The Last Kingdom', 1));
+
+// function notify(name) {
+//   console.log(`Helo dear ${name}`);
+// }
+// function registerGuest(surname, callback) {
+//   console.log(`Registering ${surname}`);
+//   callback(surname);
+// }
+// registerGuest('Jonathan', notify);
+
+// function notify(name, time) {
+//   console.log(`Hello ${name}, your time is ${time}`);
+// }
+
+// function registerGuest(surname, callback) {
+//   const time = '10:00 AM';
+//   callback(surname, time); // передаємо два аргументи
+// }
+
+// registerGuest('Jonathan', notify);
+
+// function notify(name, callback) {
+//   const messeges = `Hello dear${name}`;
+//   callback(messeges);
+// }
+// function newGuest(quest) {
+//   alert(quest);
+// }
+// notify('Ivan', newGuest);
+// const inputEL = document.querySelector('.inputEL');
+// inputEL.addEventListener('input', e => {
+//     const inputValue = e.target.value;
+// });
+//    const numbers = inputValue
+//       .split(',')
+//       .map(num => parseInt(num.trim()))
+//       .filter(num => !isNaN(num));
+
+//     filterEvensNumbers(numbers, getNumbers);
+//   });
+
+// function filterEvensNumbers(number, callback) {
+//   for (let i = 0; i < number.length; i++) {
+//     if (number[i] % 2 === 0) {
+//       prompt('everything is right');
+//     } else {
+//       alert('number is not correct');
+//       callback(number[i]);
+//     }
+//   }
+// }
+// function getNumbers(number) {
+//   console.log(number);
+// }
+// function getName(name, callback) {
+//   console.log(`Registering ${name}`);
+//   callback(name);
+// }
+// function registeringGuest(name) {
+//   console.log(`Good morning dear ${name}`);
+// }
+
+// function sayInstraction(name) {
+//   console.log(`Go ahead dear ${name}`);
+// }
+// console.log(getName('Ivan', registeringGuest));
+// console.log(getName('Ivan', sayInstraction))
+// function filterBiggerNumber(numbers, value) {
+//   let array = [];
+//   numbers.forEach(function (number) {
+//     if (number % value === 0) {
+//       array.push(number);
+//     }
+//   });
+//   return array;
+// }
+// console.log(filterBiggerNumber([3, 5, 8, 10, 25, 44, 14], 5));
+
+// function filterBiggerNumber(numbers, value) {
+//   let array = [];
+//   numbers.forEach(number => {
+//     if (number % value === 0) {
+//       array.push(number);
+//     }
+//   });
+//   return array;
+// }
+// console.log(filterBiggerNumber([3, 5, 15, 10, 25, 44, 14], 5));
+
+// До
+// function classicAdd(a, b, c) {
+//   return a + b + c;
+// }
+
+// // Після
+// const arrowAdd = (a, b, c) => a + b + c;
+// console.log(arrowAdd(3, 6, 8));
+
+// function changeEven(numbers, value) {
+//   let sum = [];
+//   numbers.forEach(number => {
+//     if (number % 2 === 0) {
+//       sum.push(number + value);
+//     } else {
+//       sum.push(number);
+//     }
+//   });
+//   return sum;
+// }
+// console.log(changeEven([1, 2, 3, 4, 5], 10));
+// console.log(changeEven([1, 4, 3, 6, 5], 10));
+// console.log(changeEven([1, 6, 3, 22, 5], 10));
+// console.log(changeEven([1, 2, 3, 4, 7], 10));
+
+// const students = [
+//   { name: 'Mango', courses: ['mathematics', 'physics'] },
+//   { name: 'Poly', courses: ['science', 'mathematics'] },
+//   { name: 'Kiwi', courses: ['physics', 'biology'] },
+// ];
+
+// // const arrCourses = students.map(student => student.courses);
+// // console.log(arrCourses);
+// const arrCours = students.flatMap(student => student.courses);
+// console.log(arrCours);
+
+const getUserEmails = users => {
+  users.map(user => user.email);
+};
+const users = [
+  {
+    name: 'Moore Hensley',
+    email: 'moorehensley@indexia.com',
+    eyeColor: 'blue',
+    friends: ['Sharron Pace'],
+    isActive: false,
+    balance: 2811,
+    skills: ['ipsum', 'lorem'],
+    gender: 'male',
+    age: 37,
+  },
+  {
+    name: 'Sharlene Bush',
+    email: 'sharlenebush@tubesys.com',
+    eyeColor: 'blue',
+    friends: ['Briana Decker', 'Sharron Pace'],
+    isActive: true,
+    balance: 3821,
+    skills: ['tempor', 'mollit', 'commodo', 'veniam', 'laborum'],
+    gender: 'female',
+    age: 34,
+  },
+  {
+    name: 'Ross Vazquez',
+    email: 'rossvazquez@xinware.com',
+    eyeColor: 'green',
+    friends: ['Marilyn Mcintosh', 'Padilla Garrison', 'Naomi Buckner'],
+    isActive: false,
+    balance: 3793,
+    skills: ['nulla', 'anim', 'proident', 'ipsum', 'elit'],
+    gender: 'male',
+    age: 24,
+  },
+  {
+    name: 'Elma Head',
+    email: 'elmahead@omatom.com',
+    eyeColor: 'green',
+    friends: ['Goldie Gentry', 'Aisha Tran'],
+    isActive: true,
+    balance: 2278,
+    skills: ['adipisicing', 'irure', 'velit'],
+    gender: 'female',
+    age: 21,
+  },
+  {
+    name: 'Carey Barr',
+    email: 'careybarr@nurali.com',
+    eyeColor: 'blue',
+    friends: ['Jordan Sampson', 'Eddie Strong'],
+    isActive: true,
+    balance: 3951,
+    skills: ['ex', 'culpa', 'nostrud'],
+    gender: 'male',
+    age: 27,
+  },
+  {
+    name: 'Blackburn Dotson',
+    email: 'blackburndotson@furnigeer.com',
+    eyeColor: 'brown',
+    friends: ['Jacklyn Lucas', 'Linda Chapman'],
+    isActive: false,
+    balance: 1498,
+    skills: ['non', 'amet', 'ipsum'],
+    gender: 'male',
+    age: 38,
+  },
+  {
+    name: 'Sheree Anthony',
+    email: 'shereeanthony@kog.com',
+    eyeColor: 'brown',
+    friends: ['Goldie Gentry', 'Briana Decker'],
+    isActive: true,
+    balance: 2764,
+    skills: ['lorem', 'veniam', 'culpa'],
+    gender: 'female',
+    age: 39,
+  },
+];
+getUserEmails(users);
