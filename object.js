@@ -504,17 +504,3 @@
 //     номером телефону. Повертає `true` або `false`.
 
 // --
-
-<<<<<<< HEAD
-
-// const person = {
-//     name: "Sasha",
-//     age: 26,
-//     job: "soccer",
-//     changeObj(key) {
-//         return this[key];
-// }
-// }
-// console.log(person.changeObj("job"));
-=======
->>>>>>> 4a005e96896bb7d67b5c64f04c4bf46b50a9065c

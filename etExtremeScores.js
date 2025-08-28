@@ -568,10 +568,10 @@
 //   return sum;
 // }
 // console.log(foo(14, 30, 10));
-function etExtremeScores(rest) {
-  return {
-    best: Math.max(...rest),
-    worst: Math.min(...rest),
-  };
-}
-console.log(etExtremeScores([89, 64, 42, 17, 93, 51, 26, 14, 2, 1, 18, 78]));
+// function etExtremeScores(rest) {
+//   return {
+//     best: Math.max(...rest),
+//     worst: Math.min(...rest),
+//   };
+// }
+// console.log(etExtremeScores([89, 64, 42, 17, 93, 51, 26, 14, 2, 1, 18, 78]));

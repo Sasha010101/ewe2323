@@ -382,15 +382,6 @@
 //   rating: 8.38,
 // };
 
-<<<<<<< HEAD
-
-// console.log(book.price); // "The Last Kingdom"
-// console.log(book["title"]); // "The Last Kingdom"
-// console.log(book.title); // "The Last Kingdom"
-=======
-// // console.log(book.price); // "The Last Kingdom"
-// // console.log(book["title"]); // "The Last Kingdom"
->>>>>>> 4a005e96896bb7d67b5c64f04c4bf46b50a9065c
 
 // const book = {
 //   title: "The Last Kingdom",
@@ -453,17 +444,6 @@
 //     number: 26,
 // };
 
-<<<<<<< HEAD
-// for (const key in apartment.owner) {
-//     console.log(`${key} :${apartment.owner[key]}`);
-    
-=======
-// for (const key in apartment.owner.location) {
-//     console.log(`${key} :${apartment.owner.location[key]}`);
-
->>>>>>> 4a005e96896bb7d67b5c64f04c4bf46b50a9065c
-// }
-//
 
 // const book = {
 //   author: "Bernard Cornwell",
@@ -706,3 +686,53 @@
 // }
 
 // console.log(etExtremeScores([89, 64, 42, 17, 93, 51, 26, 14, 2, 1, 18, 78]));
+
+
+// const list = document.querySelector(".usernames");
+// const lastItem = document.createElement("li");
+// lastItem.textContent = "Oleh";
+// list.append(lastItem);
+
+// const firstItem = document.createElement("li");
+// firstItem.textContent = "Ivan";
+// list.prepend(firstItem);
+
+// const listElem = document.querySelector(".list .text");
+// console.log(listElem.innerHTML);
+// const link = document.querySelector(".list .title");
+// link.innerHTML= `
+//   New and
+//   <a href="https://www.instagram.com" class="accent" target="_blank">
+//     improved
+//   </a>
+//   title
+// `;
+// const technologies = ["HTML", "CSS", "JavaScript", "React", "Node"];
+// const listElem = document.querySelector(".list");
+// const markup = technologies.map((technologies) => `<li class="js-item-">${technologies}</li>`).join("");
+// console.log(markup);
+// listElem.innerHTML=markup;
+
+
+
+// const userObj = {
+//     name: "Sasha",
+//     age: 20,
+//     city:"Lviv",
+// }
+// const listElem = document.querySelector(".list");
+// const markup = `<h1>Name:${userObj.name}</h1>
+//       <p>Age:${userObj.age}</p>
+//       <p>City:${userObj.city}</p>
+// `;
+// listElem.innerHTML = markup;
+
+// const list = document.querySelector(".list");
+
+// const newTechnologies = ["React", "TypeScript", "Node.js"];
+// const markup = newTechnologies.map((newTechnologies) => `<li class="list-item">${newTechnologies}</li>`).join("");
+// list.insertAdjacentHTML("beforeend", markup);
+// list.insertAdjacentHTML("afterbegin", "<h2>Popular Technologies</h2>");
+
+
+
