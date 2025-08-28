@@ -39,7 +39,7 @@
 
 // console.log(calculateTotalPrice(10, 8));
 
-// function checkAge(age, start, ) { 
+// function checkAge(age, start, ) {
 //     if (age > start && start < age ) {
 
 // function checkAge(age) {
@@ -50,4 +50,13 @@
 //     } else {
 //       return "Lets go to school";
 // }
-// 
+//
+
+// function getLastNumbers(number) {
+//   const lastNumber = number.length - 1;
+//   const secondElement = number[lastNumber];
+//   const result = [lastNumber, secondElement];
+//   return result;
+// }
+// const arr = ['peach', 'tomato', 'apple', 'orange'];
+// console.log(getLastNumbers(arr));

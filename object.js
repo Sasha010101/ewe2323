@@ -11,7 +11,6 @@
 // }
 // console.log(person);
 
-
 // Доступ до властивостей: Виведіть на консоль ім'я створеного об'єкта person.
 // const person = {
 //     name: "Sasha",
@@ -19,7 +18,6 @@
 //     job: "soccer",
 // }
 // console.log(person["name"]);
-
 
 // Зміна властивостей: Змініть вік в об'єкті person на нове значення.
 // const person = {
@@ -29,8 +27,6 @@
 // }
 // person.age = 35;
 // console.log(person);
-
-
 
 // Додавання нових властивостей: Додайте до об'єкта person властивість місце_роботи
 // зі значенням.
@@ -43,7 +39,6 @@
 // person.spaceJob = "Kyiv";
 // console.log(person);
 
-
 // Видалення властивостей: Видаліть властивість професія з об'єкта person.
 // const person = {
 //     name: "Sasha",
@@ -54,8 +49,6 @@
 // person.spaceJob = "Kyiv";
 // delete person.job;
 // console.log(person);
-
-
 
 // Пошук властивостей: Перевірте, чи існує властивість професія в об'єкті person.
 
@@ -68,7 +61,6 @@
 // person.spaceJob = "Kyiv";
 // delete person.job;
 // console.log(person.job);
-
 
 // Зведення декількох об'єктів: Створіть ще один об'єкт friend, який містить
 // інформацію про вашого друга. Потім об'єднайте властивості об'єкта friend з
@@ -90,7 +82,6 @@
 // const newObj = {...person, ... friend}
 // console.log(newObj);
 
-
 // Перебір властивостей: Виведіть всі властивості об'єкта person на консоль у
 // вигляді ключ-значення.
 // const person = {
@@ -109,12 +100,8 @@
 // const newObj = { ...person, ...friend };
 // for (let key in newObj) {
 //     console.log(`${key} : ${newObj[key]}`);
-    
+
 // }
-
-
-
-
 
 // Методи об'єкта: Додайте до об'єкта person метод привітання, який буде виводити
 // вітання з іменем особи.
@@ -124,7 +111,7 @@
 //     job: "soccer",
 //     congratulation() {
 //         console.log(`congratulation dear ${this.name}`);
-        
+
 //     }
 // };
 
@@ -139,11 +126,9 @@
 // const newObj = { ...person, ...friend };
 // for (let key in newObj) {
 //     console.log(`${key} : ${newObj[key]}`);
-    
+
 // }
 // person.congratulation()
-
-
 
 // Застосування Object.keys(): Виведіть на консоль масив зі всіма ключами об'єкта
 // person за допомогою функції Object.keys().
@@ -163,7 +148,6 @@
 // }
 // const newObj = { ...person, ...friend };
 // console.log(Object.keys(newObj));
-
 
 // ---
 
@@ -200,7 +184,6 @@
 // Напиши функцію, яка приймає об'єкт і новий вік.
 // Функція повинна змінити значення властивості "age" в об'єкті на нове значення.
 // Поверни оновлений об'єкт.
-
 
 // function getOBJ(obj, newAge) {
 //     obj.age = newAge;
@@ -260,7 +243,6 @@
 //     return { ...obj1, ...obj2 }
 // };
 
-
 // const person = {
 //     name: "Sasha",
 //     age: 26,
@@ -272,11 +254,6 @@
 //     city: "Lviv",
 // }
 //     console.log(getObj(person, person2));
-   
-    
-
-
-
 
 // ```
 // Напиши функцію, яка створює об'єкт з трьома властивостями: ім'ям, віком і адресою.
@@ -286,12 +263,10 @@
 // function createObj(name = "Unknown", age = 0, address = "Unknown") {
 
 //     return { name, age, address };
-    
-    
+
 // }
 // console.log(createObj("Sasha", 26, "Kyiv"));
 // console.log(createObj());
-
 
 // ---
 
@@ -530,6 +505,7 @@
 
 // --
 
+<<<<<<< HEAD
 
 // const person = {
 //     name: "Sasha",
@@ -540,3 +516,5 @@
 // }
 // }
 // console.log(person.changeObj("job"));
+=======
+>>>>>>> 4a005e96896bb7d67b5c64f04c4bf46b50a9065c
