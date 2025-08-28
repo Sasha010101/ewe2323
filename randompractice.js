@@ -226,6 +226,8 @@
  
     
 // }
+// console.log(array);
+
 // const arr = array.join("+");
 //  const arRay = arr.split("+")
    
@@ -233,12 +235,12 @@
 
 // function createNumbers(min, max) {
 //     const result = [];
-//     for (let i = min; i <= max; i++){
+//     for (let i = min; i < max; i++){
 //     result.push(`${i}`);
 //     }
 //     return result
 // }
-// console.log(createNumbers(3, 17));
+// console.log(createNumbers(3, 22));
 
 // function calculateTotalPrice(order) {
 //   let total = 0;
@@ -263,7 +265,7 @@
 //мін та макс. перші два числа.інше ігнор. маємо тільки 2 параметра//
     
 // const fruits = ["apple", "peach", "banana", "orange"];
-// if (fruits.includes("tomato")){
+// if (fruits.includes("peach")){
 //     console.log("we have enough");
     
 // } else {
@@ -284,6 +286,22 @@
     
 
 // console.log(getFruits(["apple", "peach", "banana", "orange"], "peach"));
+
+// function getFruits(fruits, item) {
+//     for (let fruit of fruits) {
+//         if (fruit === item) {
+//             return `We have  ${fruit}`;
+//         }
+//     }
+//     return `Sorry we dont have ${item}`;
+        
+// }
+// const fruits = ["apple", "peach", "banana", "orange"];
+
+// console.log(getFruits(["apple", "peach", "banana", "orange"], "watermelon"));
+
+
+
 
 // function getSameprosuct(arr1, arr2) {
 //     let result = [];
@@ -324,6 +342,7 @@
 // console.log(getName());
 // console.log(getName("Tolik"));
 // console.log(getName("Apolo"));
+
 
 // function count(from, to, step = 3) {
 //   console.log(`from: ${from}, to: ${to}, step: ${step}`);
@@ -366,7 +385,7 @@
 // };
 // user.location.country = "Ukraine";
 // const location = user.location.country;
-// // console.log(location);
+// console.log(location);
 
 
 // const hobbies = user.hobbies;
@@ -381,8 +400,9 @@
 // };
 
 
-// // console.log(book.price); // "The Last Kingdom"
-// // console.log(book["title"]); // "The Last Kingdom"
+// console.log(book.price); // "The Last Kingdom"
+// console.log(book["title"]); // "The Last Kingdom"
+// console.log(book.title); // "The Last Kingdom"
 
 
 // const book = {
@@ -393,7 +413,7 @@
 //   rating: 8.38,
 // };
 // const nameAuthor = "author";
-// // console.log(book.nameA"uthor);
+// // console.log(book.name"Author);
 // console.log(book[nameAuthor]);
 
 // console.log(book.price); // "The Last Kingdom"
@@ -450,11 +470,11 @@
 //     number: 26,
 // };
 
-// for (const key in apartment.owner.location) {
-//     console.log(`${key} :${apartment.owner.location[key]}`);
+// for (const key in apartment.owner) {
+//     console.log(`${key} :${apartment.owner[key]}`);
     
 // }
-// //
+//
 
 // const book = {
 //   author: "Bernard Cornwell",
@@ -462,6 +482,7 @@
 //   rating: 8.38,
 // };
 // const keys = Object.keys(book);
+// console.log(keys);
 
 // for (const key of keys) {
 //   console.log(key); // Ключ

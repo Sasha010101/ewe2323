@@ -669,3 +669,213 @@ boxShadow = '0px 0px 10px green';
 // const ar3 = ar2.split("-.-")
 // console.log(ar3);
 
+// const numbers = [5, 10, 15, 20, 25];
+
+// // Класичний for
+// // for (let i = 0; i < numbers.length; i += 1) {
+// //   console.log(`Index ${i}, value ${numbers[i]}`);
+// // }
+// // numbers.forEach(function (number, index) {
+  
+// // });
+// numbers.forEach((number, index) => {
+//   console.log(`Index ${index}, value ${number}`);
+// })
+    
+// function calculateItems(arrNumbers) {
+//     let sum = 0;
+//     arrNumbers.forEach(function (item) {
+//         sum += item;
+        
+//     });
+//     return sum;
+// }
+// console.log(calculateItems([5, 10, 15, 20, 25]));
+
+// function getNumbers(numbers, value) {
+//     let result = [];
+//     numbers.forEach(function(number){
+//        if(number > value){
+//         result.push(number);
+//         }
+//     });
+//     return result;
+// }
+//  console.log(getNumbers([5, 10, 15, 20, 25], 14));
+// function checkNumbers(numbers) {
+//     return numbers.every(bumber => bumber >= 0);
+// }
+// console.log(checkNumbers([4,6,8,9,122]));
+
+// console.log(checkNumbers([4,-6,8,0,-122]));
+
+
+// const products = [
+// 	{ name: "apple", quantity: 2 },
+// 	{ name: "orange", quantity: 5 },
+// 	{ name: "plum", quantity: 0 },
+// ];
+// const checkNambers = products.every(product => product.quantity >= 0);
+// console.log(checkNambers);
+
+
+// const products = [
+// 	{ name: "apple", quantity: 2 },
+// 	{ name: "orange", quantity: 5 },
+// 	{ name: "plum", quantity: 0 },
+// ];
+// const checkNambers = products.reduce((acc, product) => acc + product.quantity, 0);
+// console.log(checkNambers);
+
+// const isEveryUserActive = (users) => {
+//   return users.every(user => user === user.isActive)
+// };
+// const users = [
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female"
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male"
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female"
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male"
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female"
+//   }
+// ];
+// console.log(isEveryUserActive(users));
+
+// const isEveryUserActive = (users) => {
+//   return users.some(user => user.isActive)
+// };
+// const users = [
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female"
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male"
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female"
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male"
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female"
+//   }
+// ];
+// console.log(isEveryUserActive(users));
+
+
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const first = releaseDates.toSorted((a, b) => a - b);
+
+// const second = releaseDates.toSorted((a, b) => b - a);
+// console.log(second);
+// console.log(first);
+
+
+// const students = ["Jacob", "Artemis", "Solomon", "Adrian", "Kai", "Ganymede"];
+// const array = students.toSorted((a, b) => a.localeCompare("b"));
+// console.log(array);

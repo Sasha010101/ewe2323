@@ -531,12 +531,12 @@
 // --
 
 
-const person = {
-    name: "Sasha",
-    age: 26,
-    job: "soccer",
-    chengeObj() {
-        return this["key"];
-}
-}
-console.log(person.chengeObj());
+// const person = {
+//     name: "Sasha",
+//     age: 26,
+//     job: "soccer",
+//     changeObj(key) {
+//         return this[key];
+// }
+// }
+// console.log(person.changeObj("job"));

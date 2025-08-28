@@ -351,7 +351,7 @@
 //     } return result;
 //     }
 
-// const arrNum = [8, 3, 3];
+// const arrNum = [8, 3, 3]; 
 // const arrNum1 = [8, 10, 2];
 // console.log(getUniqNumbers(arrNum, arrNum1));
 
