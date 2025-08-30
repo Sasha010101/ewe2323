@@ -733,38 +733,83 @@
 // const markup = newTechnologies.map((newTechnologies) => `<li class="list-item">${newTechnologies}</li>`).join("");
 // list.insertAdjacentHTML("beforeend", markup);
 // list.insertAdjacentHTML("afterbegin", "<h2>Popular Technologies</h2>");
+// const formElems = document.querySelector(".js-form");
+// const ulElems = document.querySelector(".js-items");
+// const inputContacts = document.querySelector(".js-input-contacts")
+// const arrContacts = [];
+// formElems.addEventListener("submit", e => {
+//     e.preventDefault();
+//     const surname = e.target.elements.Surname.value;
+//     const name = e.target.elements.Name.value;
+//     const phone = e.target.elements.Phone.value;
+//     const objectContacts = {
+//         surname: surname,
+//         name: name,
+//         phone:phone,
+//     }
+//     const contactInf = getMarkup(objectContacts);
+//     ulElems.insertAdjacentHTML("afterbegin", contactInf);
+//     e.target.reset();
+//     arrContacts.push(objectContacts);
+    
+// })
+// function getMarkup({surname, name, phone}){
+//     return ` <li class="box item hight">
+//             <p>FullName: ${surname} ${name}</p>
+//             <p>phone-number: ${phone}</p>
+//             <button class="form-control" data-type="show">SHOW MORE</button>
+//             <button class="form-control" data-type="delete">DELETE</button>
+//           </li>`
+// }
+
+// inputContacts.addEventListener("input", e => {
+//     const inputContacts = e.target.value;
+//     const copy = arrContacts.filter(element => element.phone.includes(inputContacts));
+//     const markup = copy.map(getMarkup).join("");
+//     ulElems.innerHTML = markup;
+// })
+
+
+// const inputClr = document.querySelector(".js-input-color");
+// const listClr = document.querySelector(".js-items");
+// inputClr.addEventListener("input", e => {
+//     const markup = e.target.value;
+//     listClr.style.backgroundColor = markup;
+// console.log("Hello everybody");
+
+// })
 const formElems = document.querySelector(".js-form");
 const ulElems = document.querySelector(".js-items");
-const inputContacts = document.querySelector(".js-input-contacts")
-const arrContacts = [];
+const arr = [];
 formElems.addEventListener("submit", e => {
     e.preventDefault();
-    const surname = e.target.elements.Surname.value;
     const name = e.target.elements.Name.value;
+    const surname= e.target.elements.Surname.value;
     const phone = e.target.elements.Phone.value;
-    const objectContacts = {
-        surname: surname,
+    const objContact = {
         name: name,
-        phone:phone,
-    }
-    const contactInf = getMarkup(objectContacts);
-    ulElems.insertAdjacentHTML("afterbegin", contactInf);
+        surname: surname,
+        phone: phone,
+
+        
+    };
+    const contacts = getMarkup(objContact);
+    ulElems.insertAdjacentHTML("afterbegin", contacts);
     e.target.reset();
-    arrContacts.push(objectContacts);
-    
+    arr.push(objContact);
 })
-function getMarkup({surname, name, phone}){
-    return ` <li class="box item hight">
+function getRandomColor() {
+    const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+  return `rgb(${r}, ${g}, ${b})`;
+}
+function getMarkup({ surname, name, phone }) {
+     const bgColor = getRandomColor();
+    return ` <li class="box item hight" style="background-color: ${bgColor}">
             <p>FullName: ${surname} ${name}</p>
             <p>phone-number: ${phone}</p>
             <button class="form-control" data-type="show">SHOW MORE</button>
             <button class="form-control" data-type="delete">DELETE</button>
           </li>`
 }
-
-inputContacts.addEventListener("input", e => {
-    const inputContacts = e.target.value;
-    const copy = arrContacts.filter(element => element.phone.includes(inputContacts));
-    const markup = copy.map(getMarkup).join("");
-    ulElems.innerHTML = markup;
-})
