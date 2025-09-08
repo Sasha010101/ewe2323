@@ -778,38 +778,92 @@
 // console.log("Hello everybody");
 
 // })
-const formElems = document.querySelector(".js-form");
-const ulElems = document.querySelector(".js-items");
-const arr = [];
-formElems.addEventListener("submit", e => {
-    e.preventDefault();
-    const name = e.target.elements.Name.value;
-    const surname= e.target.elements.Surname.value;
-    const phone = e.target.elements.Phone.value;
-    const objContact = {
-        name: name,
-        surname: surname,
-        phone: phone,
+// const formElems = document.querySelector(".js-form");
+// const ulElems = document.querySelector(".js-items");
+// const arr = [];
+// formElems.addEventListener("submit", e => {
+//     e.preventDefault();
+//     const name = e.target.elements.Name.value;
+//     const surname= e.target.elements.Surname.value;
+//     const phone = e.target.elements.Phone.value;
+//     const objContact = {
+//         name: name,
+//         surname: surname,
+//         phone: phone,
 
         
-    };
-    const contacts = getMarkup(objContact);
-    ulElems.insertAdjacentHTML("afterbegin", contacts);
+//     };
+//     const contacts = getMarkup(objContact);
+//     ulElems.insertAdjacentHTML("afterbegin", contacts);
+//     e.target.reset();
+//     arr.push(objContact);
+// })
+// function getRandomColor() {
+//     const r = Math.floor(Math.random() * 256);
+//   const g = Math.floor(Math.random() * 256);
+//   const b = Math.floor(Math.random() * 256);
+//   return `rgb(${r}, ${g}, ${b})`;
+// }
+// function getMarkup({ surname, name, phone }) {
+//      const bgColor = getRandomColor();
+//     return ` <li class="box item hight" style="background-color: ${bgColor}">
+//             <p>FullName: ${surname} ${name}</p>
+//             <p>phone-number: ${phone}</p>
+//             <button class="form-control" data-type="show">SHOW MORE</button>
+//             <button class="form-control" data-type="delete">DELETE</button>
+//           </li>`
+// }
+// const technologies = ["HTML", "CSS", "JavaScript", "React", "Node"];
+// const listElem = document.querySelector(".list");
+// const markup = technologies.map((elem) => `<li class="list-item">${elem}</li>`)
+//     .join("");
+//     console.log(markup);
+    
+// listElem.insertAdjacentHTML("afterbegin", markup)
+    
+const formElem = document.querySelector(".js-form");
+const listElems = document.querySelector(".js-items");
+const colorEl = document.querySelector(".js-items-color")
+
+
+const arrContacts = [];
+formElem.addEventListener("submit", e => {
+    e.preventDefault();
+    const surname = e.target.elements.Surname.value;
+    const name = e.target.elements.Name.value;
+    const phone = e.target.elements.Phone.value;
+    const sex = e.target.elements.Sex.value;
+    const objContacts = {
+        surname: surname,
+        name: name,
+        phone: phone,
+        sex:sex,
+    }
+    const contacts = getMarkup(objContacts);
+    listElems.insertAdjacentHTML("afterbegin", contacts)
     e.target.reset();
-    arr.push(objContact);
+    arrContacts.push(objContacts);
+    
 })
-function getRandomColor() {
-    const r = Math.floor(Math.random() * 256);
-  const g = Math.floor(Math.random() * 256);
-  const b = Math.floor(Math.random() * 256);
-  return `rgb(${r}, ${g}, ${b})`;
+function getSex(gender) {
+  if (gender === "male") {
+    return "skyblue";
+  } else if (gender === "female") {
+    return "pink";
+  } else {
+    return "transparent";
+  }
 }
-function getMarkup({ surname, name, phone }) {
-     const bgColor = getRandomColor();
-    return ` <li class="box item hight" style="background-color: ${bgColor}">
+    
+
+    function getMarkup({ surname, name, phone, sex }) {
+        const rightColor = getSex(sex);
+    return ` <li class="box item hight" style="background-color: ${rightColor}">
             <p>FullName: ${surname} ${name}</p>
             <p>phone-number: ${phone}</p>
+             <p>Sex: ${sex}</p>
             <button class="form-control" data-type="show">SHOW MORE</button>
             <button class="form-control" data-type="delete">DELETE</button>
           </li>`
+    
 }
