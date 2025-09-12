@@ -821,49 +821,49 @@
     
 // listElem.insertAdjacentHTML("afterbegin", markup)
     
-const formElem = document.querySelector(".js-form");
-const listElems = document.querySelector(".js-items");
-const colorEl = document.querySelector(".js-items-color")
+// const formElem = document.querySelector(".js-form");
+// const listElems = document.querySelector(".js-items");
+// const colorEl = document.querySelector(".js-items-color")
 
 
-const arrContacts = [];
-formElem.addEventListener("submit", e => {
-    e.preventDefault();
-    const surname = e.target.elements.Surname.value;
-    const name = e.target.elements.Name.value;
-    const phone = e.target.elements.Phone.value;
-    const sex = e.target.elements.Sex.value;
-    const objContacts = {
-        surname: surname,
-        name: name,
-        phone: phone,
-        sex:sex,
-    }
-    const contacts = getMarkup(objContacts);
-    listElems.insertAdjacentHTML("afterbegin", contacts)
-    e.target.reset();
-    arrContacts.push(objContacts);
+// const arrContacts = [];
+// formElem.addEventListener("submit", e => {
+//     e.preventDefault();
+//     const surname = e.target.elements.Surname.value;
+//     const name = e.target.elements.Name.value;
+//     const phone = e.target.elements.Phone.value;
+//     const sex = e.target.elements.Sex.value;
+//     const objContacts = {
+//         surname: surname,
+//         name: name,
+//         phone: phone,
+//         sex:sex,
+//     }
+//     const contacts = getMarkup(objContacts);
+//     listElems.insertAdjacentHTML("afterbegin", contacts)
+//     e.target.reset();
+//     arrContacts.push(objContacts);
     
-})
-function getSex(gender) {
-  if (gender === "male") {
-    return "skyblue";
-  } else if (gender === "female") {
-    return "pink";
-  } else {
-    return "transparent";
-  }
-}
+// })
+// function getSex(gender) {
+//   if (gender === "male") {
+//     return "skyblue";
+//   } else if (gender === "female") {
+//     return "pink";
+//   } else {
+//     return "transparent";
+//   }
+// }
     
 
-    function getMarkup({ surname, name, phone, sex }) {
-        const rightColor = getSex(sex);
-    return ` <li class="box item hight" style="background-color: ${rightColor}">
-            <p>FullName: ${surname} ${name}</p>
-            <p>phone-number: ${phone}</p>
-             <p>Sex: ${sex}</p>
-            <button class="form-control" data-type="show">SHOW MORE</button>
-            <button class="form-control" data-type="delete">DELETE</button>
-          </li>`
+//     function getMarkup({ surname, name, phone, sex }) {
+//         const rightColor = getSex(sex);
+//     return ` <li class="box item hight" style="background-color: ${rightColor}">
+//             <p>FullName: ${surname} ${name}</p>
+//             <p>phone-number: ${phone}</p>
+//              <p>Sex: ${sex}</p>
+//             <button class="form-control" data-type="show">SHOW MORE</button>
+//             <button class="form-control" data-type="delete">DELETE</button>
+//           </li>`
     
-}
+// }
