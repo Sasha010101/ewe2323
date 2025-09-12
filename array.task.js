@@ -319,12 +319,18 @@
 // const numbers = [2, 3, 6, 8];
 // console.log(getSum(numbers));
 
+function getSum(array) {
+    return array.reduce((acc,elem) => acc + elem,0)
+}
+const numbers = [2, 3, 6, 8];
+console.log(getSum(numbers));
+
 // 1. Напиши функцію, яка приймає массив чисел і повертає новий массив, що містить
 //    лише унікальні числа.
 
 // function getUniqNumbers(array) {
 //     let result = [];
-//     for (let elem of array) {
+//     for (let elem of array) {...
 //         if (!result.includes(elem)){
 //             result.push(elem);
 //        }
@@ -351,7 +357,7 @@
 //     } return result;
 //     }
 
-// const arrNum = [8, 3, 3];
+// const arrNum = [8, 3, 3]; 
 // const arrNum1 = [8, 10, 2];
 // console.log(getUniqNumbers(arrNum, arrNum1));
 
@@ -410,5 +416,5 @@
 //         } 
 //     }return min;
 // }
-// const items = [ 6, 10, 18, 10, 30, 33];
+// const items = [ 6,5, 10, 18, 10, 30, 33];
 // console.log(multiply(items));

@@ -215,6 +215,8 @@
 //     array.push(`${index}`);
 
 // }
+// console.log(array);
+
 // const arr = array.join("+");
 //  const arRay = arr.split("+")
 
@@ -222,12 +224,12 @@
 
 // function createNumbers(min, max) {
 //     const result = [];
-//     for (let i = min; i <= max; i++){
+//     for (let i = min; i < max; i++){
 //     result.push(`${i}`);
 //     }
 //     return result
 // }
-// console.log(createNumbers(3, 17));
+// console.log(createNumbers(3, 22));
 
 // function calculateTotalPrice(order) {
 //   let total = 0;
@@ -252,7 +254,7 @@
 //мін та макс. перші два числа.інше ігнор. маємо тільки 2 параметра//
 
 // const fruits = ["apple", "peach", "banana", "orange"];
-// if (fruits.includes("tomato")){
+// if (fruits.includes("peach")){
 //     console.log("we have enough");
 
 // } else {
@@ -271,6 +273,22 @@
 // const fruits = ["apple", "peach", "banana", "orange"];
 
 // console.log(getFruits(["apple", "peach", "banana", "orange"], "peach"));
+
+// function getFruits(fruits, item) {
+//     for (let fruit of fruits) {
+//         if (fruit === item) {
+//             return `We have  ${fruit}`;
+//         }
+//     }
+//     return `Sorry we dont have ${item}`;
+        
+// }
+// const fruits = ["apple", "peach", "banana", "orange"];
+
+// console.log(getFruits(["apple", "peach", "banana", "orange"], "watermelon"));
+
+
+
 
 // function getSameprosuct(arr1, arr2) {
 //     let result = [];
@@ -311,6 +329,7 @@
 // console.log(getName("Tolik"));
 // console.log(getName("Apolo"));
 
+
 // function count(from, to, step = 3) {
 //   console.log(`from: ${from}, to: ${to}, step: ${step}`);
 
@@ -350,7 +369,7 @@
 // };
 // user.location.country = "Ukraine";
 // const location = user.location.country;
-// // console.log(location);
+// console.log(location);
 
 // const hobbies = user.hobbies;
 // console.log(hobbies[1]); // ["swimming", "music", "sci-fi"]
@@ -363,8 +382,6 @@
 //   rating: 8.38,
 // };
 
-// // console.log(book.price); // "The Last Kingdom"
-// // console.log(book["title"]); // "The Last Kingdom"
 
 // const book = {
 //   title: "The Last Kingdom",
@@ -374,7 +391,7 @@
 //   rating: 8.38,
 // };
 // const nameAuthor = "author";
-// // console.log(book.nameA"uthor);
+// // console.log(book.name"Author);
 // console.log(book[nameAuthor]);
 
 // console.log(book.price); // "The Last Kingdom"
@@ -427,11 +444,6 @@
 //     number: 26,
 // };
 
-// for (const key in apartment.owner.location) {
-//     console.log(`${key} :${apartment.owner.location[key]}`);
-
-// }
-// //
 
 // const book = {
 //   author: "Bernard Cornwell",
@@ -439,6 +451,7 @@
 //   rating: 8.38,
 // };
 // const keys = Object.keys(book);
+// console.log(keys);
 
 // for (const key of keys) {
 //   console.log(key); // Ключ
@@ -673,3 +686,184 @@
 // }
 
 // console.log(etExtremeScores([89, 64, 42, 17, 93, 51, 26, 14, 2, 1, 18, 78]));
+
+
+// const list = document.querySelector(".usernames");
+// const lastItem = document.createElement("li");
+// lastItem.textContent = "Oleh";
+// list.append(lastItem);
+
+// const firstItem = document.createElement("li");
+// firstItem.textContent = "Ivan";
+// list.prepend(firstItem);
+
+// const listElem = document.querySelector(".list .text");
+// console.log(listElem.innerHTML);
+// const link = document.querySelector(".list .title");
+// link.innerHTML= `
+//   New and
+//   <a href="https://www.instagram.com" class="accent" target="_blank">
+//     improved
+//   </a>
+//   title
+// `;
+// const technologies = ["HTML", "CSS", "JavaScript", "React", "Node"];
+// const listElem = document.querySelector(".list");
+// const markup = technologies.map((technologies) => `<li class="js-item-">${technologies}</li>`).join("");
+// console.log(markup);
+// listElem.innerHTML=markup;
+
+
+
+// const userObj = {
+//     name: "Sasha",
+//     age: 20,
+//     city:"Lviv",
+// }
+// const listElem = document.querySelector(".list");
+// const markup = `<h1>Name:${userObj.name}</h1>
+//       <p>Age:${userObj.age}</p>
+//       <p>City:${userObj.city}</p>
+// `;
+// listElem.innerHTML = markup;
+
+// const list = document.querySelector(".list");
+
+// const newTechnologies = ["React", "TypeScript", "Node.js"];
+// const markup = newTechnologies.map((newTechnologies) => `<li class="list-item">${newTechnologies}</li>`).join("");
+// list.insertAdjacentHTML("beforeend", markup);
+// list.insertAdjacentHTML("afterbegin", "<h2>Popular Technologies</h2>");
+// const formElems = document.querySelector(".js-form");
+// const ulElems = document.querySelector(".js-items");
+// const inputContacts = document.querySelector(".js-input-contacts")
+// const arrContacts = [];
+// formElems.addEventListener("submit", e => {
+//     e.preventDefault();
+//     const surname = e.target.elements.Surname.value;
+//     const name = e.target.elements.Name.value;
+//     const phone = e.target.elements.Phone.value;
+//     const objectContacts = {
+//         surname: surname,
+//         name: name,
+//         phone:phone,
+//     }
+//     const contactInf = getMarkup(objectContacts);
+//     ulElems.insertAdjacentHTML("afterbegin", contactInf);
+//     e.target.reset();
+//     arrContacts.push(objectContacts);
+    
+// })
+// function getMarkup({surname, name, phone}){
+//     return ` <li class="box item hight">
+//             <p>FullName: ${surname} ${name}</p>
+//             <p>phone-number: ${phone}</p>
+//             <button class="form-control" data-type="show">SHOW MORE</button>
+//             <button class="form-control" data-type="delete">DELETE</button>
+//           </li>`
+// }
+
+// inputContacts.addEventListener("input", e => {
+//     const inputContacts = e.target.value;
+//     const copy = arrContacts.filter(element => element.phone.includes(inputContacts));
+//     const markup = copy.map(getMarkup).join("");
+//     ulElems.innerHTML = markup;
+// })
+
+
+// const inputClr = document.querySelector(".js-input-color");
+// const listClr = document.querySelector(".js-items");
+// inputClr.addEventListener("input", e => {
+//     const markup = e.target.value;
+//     listClr.style.backgroundColor = markup;
+// console.log("Hello everybody");
+
+// })
+// const formElems = document.querySelector(".js-form");
+// const ulElems = document.querySelector(".js-items");
+// const arr = [];
+// formElems.addEventListener("submit", e => {
+//     e.preventDefault();
+//     const name = e.target.elements.Name.value;
+//     const surname= e.target.elements.Surname.value;
+//     const phone = e.target.elements.Phone.value;
+//     const objContact = {
+//         name: name,
+//         surname: surname,
+//         phone: phone,
+
+        
+//     };
+//     const contacts = getMarkup(objContact);
+//     ulElems.insertAdjacentHTML("afterbegin", contacts);
+//     e.target.reset();
+//     arr.push(objContact);
+// })
+// function getRandomColor() {
+//     const r = Math.floor(Math.random() * 256);
+//   const g = Math.floor(Math.random() * 256);
+//   const b = Math.floor(Math.random() * 256);
+//   return `rgb(${r}, ${g}, ${b})`;
+// }
+// function getMarkup({ surname, name, phone }) {
+//      const bgColor = getRandomColor();
+//     return ` <li class="box item hight" style="background-color: ${bgColor}">
+//             <p>FullName: ${surname} ${name}</p>
+//             <p>phone-number: ${phone}</p>
+//             <button class="form-control" data-type="show">SHOW MORE</button>
+//             <button class="form-control" data-type="delete">DELETE</button>
+//           </li>`
+// }
+// const technologies = ["HTML", "CSS", "JavaScript", "React", "Node"];
+// const listElem = document.querySelector(".list");
+// const markup = technologies.map((elem) => `<li class="list-item">${elem}</li>`)
+//     .join("");
+//     console.log(markup);
+    
+// listElem.insertAdjacentHTML("afterbegin", markup)
+    
+// const formElem = document.querySelector(".js-form");
+// const listElems = document.querySelector(".js-items");
+// const colorEl = document.querySelector(".js-items-color")
+
+
+// const arrContacts = [];
+// formElem.addEventListener("submit", e => {
+//     e.preventDefault();
+//     const surname = e.target.elements.Surname.value;
+//     const name = e.target.elements.Name.value;
+//     const phone = e.target.elements.Phone.value;
+//     const sex = e.target.elements.Sex.value;
+//     const objContacts = {
+//         surname: surname,
+//         name: name,
+//         phone: phone,
+//         sex:sex,
+//     }
+//     const contacts = getMarkup(objContacts);
+//     listElems.insertAdjacentHTML("afterbegin", contacts)
+//     e.target.reset();
+//     arrContacts.push(objContacts);
+    
+// })
+// function getSex(gender) {
+//   if (gender === "male") {
+//     return "skyblue";
+//   } else if (gender === "female") {
+//     return "pink";
+//   } else {
+//     return "transparent";
+//   }
+// }
+    
+
+//     function getMarkup({ surname, name, phone, sex }) {
+//         const rightColor = getSex(sex);
+//     return ` <li class="box item hight" style="background-color: ${rightColor}">
+//             <p>FullName: ${surname} ${name}</p>
+//             <p>phone-number: ${phone}</p>
+//              <p>Sex: ${sex}</p>
+//             <button class="form-control" data-type="show">SHOW MORE</button>
+//             <button class="form-control" data-type="delete">DELETE</button>
+//           </li>`
+    
+// }
