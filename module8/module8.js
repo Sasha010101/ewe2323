@@ -67,24 +67,41 @@
 // }
 //////////
 
-const bookData = {
-  title: 'Unknown Book',
-  author: 'Anonymous',
-  pages: 100,
-  downloads: 0,
-  publisher: 'Self',
-  shlak: {
-    year: 2025,
-    language: 'Ukrainian',
-    genres: ['mystery'],
-  },
+// const bookData = {
+//   title: 'Unknown Book',
+//   author: 'Anonymous',
+//   pages: 100,
+//   downloads: 0,
+//   publisher: 'Self',
+//   shlak: {
+//     year: 2025,
+//     language: 'Ukrainian',
+//     genres: ['mystery'],
+//   },
+// };
+// const {
+//   title,
+//   author,
+//   pages,
+//   downloads,
+//   publisher,
+//   shlak: { year = 22, language, genres },
+// } = bookData;
+// console.log(title, language, year);
+const ref = {
+  parent: document.querySelector('.parent'),
+  child: document.querySelector('.child'),
+  descendant: document.querySelector('.descendant'),
+  buttons: document.querySelector('.js-buttons'),
+  btn: document.querySelector('.btn'),
+  items: document.querySelector('.btn_items'),
 };
-const {
-  title,
-  author,
-  pages,
-  downloads,
-  publisher,
-  shlak: { year = 22, language, genres },
-} = bookData;
-console.log(title, language, year);
+ref.buttons.addEventListener('click', e => {
+  if (e.target === e.currentTarget) {
+    ref.buttons.style.backgroundColor = 'teal';
+    return;
+  }
+  const markup = e.target;
+  // console.log(markup);
+  console.log(markup);
+});
