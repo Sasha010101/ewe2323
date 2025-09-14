@@ -1,4 +1,7 @@
-.parent,
+
+* {
+  box-sizing: border-box;
+}/* .parent,
 .child,
 .descendant {
   margin: 16px;
@@ -42,4 +45,53 @@
   cursor: pointer;
   border: none;
   border-radius: 6px;
+} */
+.container {
+  border: 3px solid tomato;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.li-items {
+ border: 2px solid red;
+ border-radius: 20px;
+
+  padding: 10px;
+}
+
+
+.active {
+    background-color: teal;
+  
+
+  }
+
+  
+
+
+.items-btn {
+  height: 50px;
+  width: 80px;
+  cursor: pointer;
+  background-color: transparent;
+    border: none;
+    
+
+} 
+
+.li-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.li-send{
+width: 50px;
+height: 40px;
+cursor: pointer;
 }

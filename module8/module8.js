@@ -23,10 +23,32 @@
     
 // })
 //////////////////
-const divBnts = document.querySelector(".js-buttons");
-divBnts.addEventListener("click", e => {
-    const markup = e.target;
-    console.log(markup);
+// const divBnts = document.querySelector(".js-buttons");
+// divBnts.addEventListener("click", e => {
+//     const markup = e.target;
+//     console.log(markup);
     
+    
+// })
+
+const ref = {
+    list: document.querySelector(".list"),
+    liItems: document.querySelector(".li-items"),
+    sendBtn: document.querySelector(".li-send"),
+
+}
+ref.list.addEventListener("click", e => {
+    if (e.target === e.currentTarget) return;
+    const liElem = e.target.closest("li");
+  
+   
+    
+   liElem.classList.toggle("active");
     
 })
+ref.sendBtn.addEventListener("click", sendData)
+function sendData() {
+    const firstActive = ref.list.querySelectorAll("active");
+    console.log(firstActive);
+    
+}
