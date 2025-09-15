@@ -31,24 +31,24 @@
     
 // })
 
-const ref = {
-    list: document.querySelector(".list"),
-    liItems: document.querySelector(".li-items"),
-    sendBtn: document.querySelector(".li-send"),
+// const ref = {
+//     list: document.querySelector(".list"),
+//     liItems: document.querySelector(".li-items"),
+//     sendBtn: document.querySelector(".li-send"),
 
-}
-ref.list.addEventListener("click", e => {
-    if (e.target === e.currentTarget) return;
-    const liElem = e.target.closest("li");
+// }
+// ref.list.addEventListener("click", e => {
+//     if (e.target === e.currentTarget) return;
+//     const liElem = e.target.closest("li");
   
    
     
-   liElem.classList.toggle("active");
+//    liElem.classList.toggle("active");
     
-})
-ref.sendBtn.addEventListener("click", sendData)
-function sendData() {
-    const firstActive = ref.list.querySelectorAll("active");
-    console.log(firstActive);
+// })
+// ref.sendBtn.addEventListener("click", sendData)
+// function sendData() {
+//     const firstActive = ref.list.querySelectorAll("active");
+//     console.log(firstActive);
     
-}
+// }
