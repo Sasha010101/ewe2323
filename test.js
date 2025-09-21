@@ -1054,11 +1054,11 @@ boxShadow = '0px 0px 10px green';
 // console.log(arrCours);
 
 // const getUserEmails = users => {
-<<<<<<< HEAD
+
 //   return users.map(user => user.email);
-=======
+
 //   users.map(user => user.email);
->>>>>>> 80bc80aa75930f3046416cff35042694d392b1ec
+
 // };
 // const users = [
 //   {
@@ -1139,7 +1139,7 @@ boxShadow = '0px 0px 10px green';
 //     age: 39,
 //   },
 // ];
-<<<<<<< HEAD
+
 // console.log(getUserEmails(users));
 
 // const array = [24, -5, 22, 46, 99, 8, 23, 12];
@@ -1396,7 +1396,7 @@ boxShadow = '0px 0px 10px green';
 //   .map(book => book.author)
 //   .toSorted((a, b) => a.localeCompare('b'));
 // console.log(names);
-=======
+
 // getUserEmails(users);
 // >>>>>>> 4a005e96896bb7d67b5c64f04c4bf46b50a9065c
->>>>>>> 80bc80aa75930f3046416cff35042694d392b1ec
+

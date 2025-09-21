@@ -6,7 +6,7 @@
 // function getArr(array) {
 //     for (let arr of array) {
 //         console.log(arr);
-        
+
 //     }
 // }
 // const items = [1, 4, 7, 10]
@@ -18,10 +18,9 @@
 //     for (let arr of array) {
 //         if (arr % 2 === 0) {
 //     console.log(arr);
-    
+
 // }
-        
-        
+
 //     }
 // }
 // const items = [1, 4, 7, 10]
@@ -33,15 +32,13 @@
 //     for (let arr of array) {
 //         if (arr % 2 === 0) {
 //     numbers.push(arr)
-    
+
 // }
-        
-        
+
 //     } return numbers;
 // }
 // const items = [1, 4, 7, 10]
 // console.log(getArr(items));
-
 
 // 1. Напиши функцію, яка приймає два параметри (arr, max). Де arr - це масив
 //    чисел. Потрібно вивести лише ті елементи масиву які більші за max.
@@ -49,7 +46,7 @@
 //     for (let num of arr) {
 //        if (num > max) {
 //         console.log(num);
-        
+
 //        }
 //    }
 // }
@@ -79,7 +76,6 @@
 // const items = [1, 4, 10, 7, 10, 30, 33];
 // console.log(countTimes(items, 10));
 
- 
 // 1. Напиши функцію яка приймає масив чисел. Функція повинна видалити усі
 //    негативні(відємні числа) з масиву та повернути новий масив.
 // function countTimes(array) {
@@ -102,7 +98,7 @@
 //         if (arr.length < 6) {
 //             result.push(arr.toLowerCase());
 //         }
-    
+
 //         else {
 //             result.push(arr.toUpperCase())
 //         }
@@ -110,7 +106,6 @@
 // }
 // const strings = ["hello", "Peach", "apple", "Monitor", "Germany"];
 // console.log(checkLength(strings));
-
 
 // 1. Напиши функцію, яка приймає масив чисел і повертає новий масив, що містить
 //    лише непарні числа.
@@ -132,7 +127,7 @@
 //     let newArr = [];
 //     for (let index = 0; index < array.length; index++) {
 //         newArr.push(array[index] * index)
-        
+
 //     } return newArr;
 // }
 // const items = [1, 4, 10, 7, 10, 30, 33];
@@ -148,10 +143,9 @@
 //         }
 //     } return newArr;
 // }
-  
+
 // const items = [1, 6, 10, 18, 10, 30, 33];
 // console.log(multiply(items));
-
 
 // ## Середні задачі
 
@@ -169,9 +163,6 @@
 // const secondArr = ["Mars", "Jupiter", "Saturn", "Earth"]
 // console.log(getSameElement(firstArr, secondArr));
 
-    
-    
-    
 // 1. Напиши функцію яка приймає два масиви (arr1, arr2), та повертає новий масив
 //    де будуть лише елементи масиву arr1 яких не має у масиві arr2.
 
@@ -187,7 +178,6 @@
 // const secondArr = ["Mars", "Jupiter", "Saturn", "Earth"]
 // console.log(getUniqElement(firstArr, secondArr));
 
-    
 // 1. Напиши функцію яка приймає масив та знаходить мінімальний елемент.
 
 // function multiply(array) {
@@ -253,7 +243,7 @@
 //    елемент та видалити його з масиву.
 // function getArrNumbers(array) {
 //     let min = array[0];
-  
+
 //     for (let i = 0; i < array.length; i++) {
 //         if (array[i] < min) {
 //             min = array[i];
@@ -305,7 +295,6 @@
 // const numbers = [2, 3, 6, 8, 5, 7, 13, 17, 25];
 // console.log(getNumbers(numbers));
 
-
 // 1. Напиши функцію, яка приймає массив чисел і повертає новий массив, де кожен
 //    елемент є сумою усіх попередніх елементів.
 // function getSum(array) {
@@ -319,11 +308,11 @@
 // const numbers = [2, 3, 6, 8];
 // console.log(getSum(numbers));
 
-function getSum(array) {
-    return array.reduce((acc,elem) => acc + elem,0)
-}
-const numbers = [2, 3, 6, 8];
-console.log(getSum(numbers));
+// function getSum(array) {
+//     return array.reduce((acc,elem) => acc + elem,0)
+// }
+// const numbers = [2, 3, 6, 8];
+// console.log(getSum(numbers));
 
 // 1. Напиши функцію, яка приймає массив чисел і повертає новий массив, що містить
 //    лише унікальні числа.
@@ -339,7 +328,6 @@ console.log(getSum(numbers));
 
 // const numbers = [ 8, 3, 3, 8, 10,2];
 // console.log(getUniqNumbers(numbers));
-
 
 // 1. Напиши функцію, яка приймає два масиви і повертає об'єднаний массив без
 //    дублювання елементів.
@@ -357,11 +345,9 @@ console.log(getSum(numbers));
 //     } return result;
 //     }
 
-// const arrNum = [8, 3, 3]; 
+// const arrNum = [8, 3, 3];
 // const arrNum1 = [8, 10, 2];
 // console.log(getUniqNumbers(arrNum, arrNum1));
-
-
 
 // 1. Напиши функцію, яка приймає массив чисел і повертає новий массив, де кожен
 //    елемент є середньоарифметичним всіх сусідніх елементів.
@@ -375,8 +361,6 @@ console.log(getSum(numbers));
 
 // const numbers = [ 8, 3, 10,2];
 // console.log(getUniqNumbers(numbers));
-
-
 
 // 1. Напиши функцію, яка приймає массив рядочків та сортує їх за довжиною
 //    елементів.
@@ -413,7 +397,7 @@ console.log(getSum(numbers));
 //             min = array[i]
 //         } else if (array[i] < min) {
 //             min = array[i];
-//         } 
+//         }
 //     }return min;
 // }
 // const items = [ 6,5, 10, 18, 10, 30, 33];
