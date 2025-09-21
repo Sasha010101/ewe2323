@@ -865,10 +865,15 @@
 // console.log(json);
 // const parse = JSON.parse(json);
 // console.log(parse);
-// try {
-//   const json = JSON.stringify(Well);
-//   console.log('Everything Ok');
-// } catch (error) {
-//   console.log(error.name);
-//   console.log(error.message);
-// }
+
+
+  
+
+try {
+  const json = JSON.stringify(Well);
+    console.log('Everything Ok');
+} catch (error) {
+  console.log(error.name);
+  console.log(error.message);
+};  
+
