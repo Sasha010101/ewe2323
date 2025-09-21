@@ -866,14 +866,46 @@
 // const parse = JSON.parse(json);
 // console.log(parse);
 
+// try {
+//   const json = JSON.stringify(Well);
+//     console.log('Everything Ok');
+// } catch (error) {
+//   console.log(error.name);
+//   console.log(error.message);
+// };
 
-  
+// localStorage.setItem('ui-theme', 'light');
+// localStorage.setItem('ui-theme', 'dark');
+// console.log(localStorage);
 
-try {
-  const json = JSON.stringify(Well);
-    console.log('Everything Ok');
-} catch (error) {
-  console.log(error.name);
-  console.log(error.message);
-};  
+// const obj = {
+//   name: 'Ivan',
+//   age: 43,
+//   isRight: true,
+//   surname: 'Timkov',
+// };
 
+// localStorage.setItem('user-obj', JSON.stringify(obj));
+// console.log(localStorage);
+// //!====================
+// const localData = localStorage.getItem('user-obj');
+// const parsData = JSON.parse(localData);
+// console.log(parsData);
+// //!====================
+// const takeData = localStorage.getItem('user-obj');
+// const changeData = JSON.parse(takeData);
+// changeData.age = 56;
+// changeData.city = 'Lviv';
+// localStorage.setItem('user-obj', JSON.stringify(changeData));
+// console.log(localStorage);
+// //!====================
+
+localStorage.setItem('ua-theme', '"hello"');
+const getElem = localStorage.getItem('ua-theme');
+const parseElem = JSON.parse(getElem);
+// console.log(parseElem);
+//!=======
+localStorage.removeItem('ua-theme');
+const takeUaTheme = localStorage.getItem('ua-theme');
+console.log(takeUaTheme);
+//!==========
