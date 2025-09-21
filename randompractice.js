@@ -281,14 +281,11 @@
 //         }
 //     }
 //     return `Sorry we dont have ${item}`;
-        
+
 // }
 // const fruits = ["apple", "peach", "banana", "orange"];
 
 // console.log(getFruits(["apple", "peach", "banana", "orange"], "watermelon"));
-
-
-
 
 // function getSameprosuct(arr1, arr2) {
 //     let result = [];
@@ -328,7 +325,6 @@
 // console.log(getName());
 // console.log(getName("Tolik"));
 // console.log(getName("Apolo"));
-
 
 // function count(from, to, step = 3) {
 //   console.log(`from: ${from}, to: ${to}, step: ${step}`);
@@ -381,7 +377,6 @@
 //   isPublic: true,
 //   rating: 8.38,
 // };
-
 
 // const book = {
 //   title: "The Last Kingdom",
@@ -443,7 +438,6 @@
 //     street: "the best",
 //     number: 26,
 // };
-
 
 // const book = {
 //   author: "Bernard Cornwell",
@@ -687,7 +681,6 @@
 
 // console.log(etExtremeScores([89, 64, 42, 17, 93, 51, 26, 14, 2, 1, 18, 78]));
 
-
 // const list = document.querySelector(".usernames");
 // const lastItem = document.createElement("li");
 // lastItem.textContent = "Oleh";
@@ -712,8 +705,6 @@
 // const markup = technologies.map((technologies) => `<li class="js-item-">${technologies}</li>`).join("");
 // console.log(markup);
 // listElem.innerHTML=markup;
-
-
 
 // const userObj = {
 //     name: "Sasha",
@@ -751,7 +742,7 @@
 //     ulElems.insertAdjacentHTML("afterbegin", contactInf);
 //     e.target.reset();
 //     arrContacts.push(objectContacts);
-    
+
 // })
 // function getMarkup({surname, name, phone}){
 //     return ` <li class="box item hight">
@@ -768,7 +759,6 @@
 //     const markup = copy.map(getMarkup).join("");
 //     ulElems.innerHTML = markup;
 // })
-
 
 // const inputClr = document.querySelector(".js-input-color");
 // const listClr = document.querySelector(".js-items");
@@ -791,7 +781,6 @@
 //         surname: surname,
 //         phone: phone,
 
-        
 //     };
 //     const contacts = getMarkup(objContact);
 //     ulElems.insertAdjacentHTML("afterbegin", contacts);
@@ -818,13 +807,12 @@
 // const markup = technologies.map((elem) => `<li class="list-item">${elem}</li>`)
 //     .join("");
 //     console.log(markup);
-    
+
 // listElem.insertAdjacentHTML("afterbegin", markup)
-    
+
 // const formElem = document.querySelector(".js-form");
 // const listElems = document.querySelector(".js-items");
 // const colorEl = document.querySelector(".js-items-color")
-
 
 // const arrContacts = [];
 // formElem.addEventListener("submit", e => {
@@ -843,7 +831,7 @@
 //     listElems.insertAdjacentHTML("afterbegin", contacts)
 //     e.target.reset();
 //     arrContacts.push(objContacts);
-    
+
 // })
 // function getSex(gender) {
 //   if (gender === "male") {
@@ -854,7 +842,6 @@
 //     return "transparent";
 //   }
 // }
-    
 
 //     function getMarkup({ surname, name, phone, sex }) {
 //         const rightColor = getSex(sex);
@@ -865,5 +852,23 @@
 //             <button class="form-control" data-type="show">SHOW MORE</button>
 //             <button class="form-control" data-type="delete">DELETE</button>
 //           </li>`
-    
+
+// }
+
+// const obj = {
+//   name: 'Ivan',
+//   age: 43,
+//   isRight: true,
+//   surname: 'Timkov',
+// };
+// const json = JSON.stringify(obj);
+// console.log(json);
+// const parse = JSON.parse(json);
+// console.log(parse);
+// try {
+//   const json = JSON.stringify(Well);
+//   console.log('Everything Ok');
+// } catch (error) {
+//   console.log(error.name);
+//   console.log(error.message);
 // }
