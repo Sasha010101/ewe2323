@@ -889,23 +889,36 @@
 // console.log(localStorage);
 // //!====================
 // const localData = localStorage.getItem('user-obj');
-// const parsData = JSON.parse(localData);
-// console.log(parsData);
+// const changeData = JSON.parse(localData);
+// console.log(changeData);
 // //!====================
-// const takeData = localStorage.getItem('user-obj');
-// const changeData = JSON.parse(takeData);
 // changeData.age = 56;
 // changeData.city = 'Lviv';
 // localStorage.setItem('user-obj', JSON.stringify(changeData));
 // console.log(localStorage);
 // //!====================
 
-localStorage.setItem('ua-theme', '"hello"');
-const getElem = localStorage.getItem('ua-theme');
-const parseElem = JSON.parse(getElem);
-// console.log(parseElem);
-//!=======
-localStorage.removeItem('ua-theme');
-const takeUaTheme = localStorage.getItem('ua-theme');
-console.log(takeUaTheme);
-//!==========
+
+
+
+// localStorage.setItem('ua-theme', '"hello"');
+// const getElem = localStorage.getItem('ua-theme');
+// const parseElem = JSON.parse(getElem);
+// // console.log(parseElem);
+// //!=======
+// localStorage.removeItem('ua-theme');
+// const takeUaTheme = localStorage.getItem('ua-theme');
+// console.log(takeUaTheme);
+// //!==========
+
+
+
+
+// localStorage.setItem("user", JSON.stringify({
+//   name: 'Ivan',
+//   age: 66,
+//   isRight: true,
+//   surname: 'Balan',
+// }));
+// const parseUser = JSON.parse(localStorage.getItem("user"));
+// console.log(parseUser);
