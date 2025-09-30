@@ -17,21 +17,41 @@
   <body>
     <div class="js-form-container fb fb-h">
       <form class="form box js-form">
-        <input type="text" class="form-control" />
-        <input type="text" class="form-control" />
-        <input type="text" class="form-control" />
-        <input type="text" class="form-control" />
-
-        <button class="form-control" type="submit">Create item</button>
+        <input
+          type="text"
+          name="departure"
+          placeholder="Departure"
+          class="form-control"
+        />
+        <input
+          type="text"
+          name="destination"
+          placeholder="Destination"
+          class="form-control"
+        />
+        <input
+          type="date"
+          name="date"
+          placeholder="Date"
+          class="form-control"
+        />
+        <input
+          type="time"
+          name="time"
+          placeholder="Time"
+          class="form-control"
+        />
+        <input
+          type="text"
+          name="passengers"
+          placeholder="Passengers"
+          class="form-control"
+        />
+        <button class="form-control" type="submit">Start-booking</button>
       </form>
 
       <div class="box" style="width: fit-content">
-        <ul class="js-items list">
-          <li class="box item hight disabled">
-            <button class="form-control" data-type="show">SHOW MORE</button>
-            <button class="form-control" data-type="delete">DELETE</button>
-          </li>
-        </ul>
+        <ul class="js-items list"></ul>
       </div>
     </div>
 
