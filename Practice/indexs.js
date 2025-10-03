@@ -25,9 +25,23 @@ refs.form.addEventListener("submit", e => {
 })
 
 function getRegistration({departure, destination}) {
-    return `<li class="box item hight"><p></p>
-    <p>${departure}</p>
-    <p>${destination}</p>
+    return `<li class="box item hight">
+     <div class="js-text">
+      <span>${departure}</span>
+  <span>${destination}</span>
+      </div>
      <button class="form-control" data-type="show">SHOW MORE</button>
     </li>`
+}
+function createLsPassengers(key,value) {
+    const json = JSON.stringify(value);
+    localStorage.setItem(key,value)
+}
+function parseLsPassengers(key) {
+   const parse = localStorage.getItem(key);
+    try {
+       const result = JSON.parse(parse)
+    } catch {
+        return parse;
+   }
 }

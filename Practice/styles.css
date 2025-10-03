@@ -211,6 +211,7 @@ td {
 }
 
 .box {
+    
     padding: 20px;
     border-radius: 15px;
     margin: 20px;
@@ -297,6 +298,7 @@ input:focus {
 }
 
 .item {
+   
     padding: 10px;
     margin: 10px;
     border-radius: 15px;
@@ -305,7 +307,10 @@ input:focus {
     width: 400px;
     border: 1px solid rgb(49, 49, 49);
 }
-
+.js-text{
+    display: flex;
+    gap: 20px;
+}
 .item-desc {
     height: 150px;
     overflow-y: auto;
