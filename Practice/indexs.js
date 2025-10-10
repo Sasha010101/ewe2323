@@ -1,5 +1,3 @@
-import * as basicLightbox from 'basiclightbox';
-import 'basiclightbox/dist/basicLightbox.min.css';
 const refs = {
   form: document.querySelector('.js-form'),
   list: document.querySelector('.js-items'),
