@@ -330,3 +330,10 @@ input:focus {
 li.disabled {
   opacity: 0.3;
 }
+.btn-js {
+
+  background-color: green;
+  width: 100px;
+  height: 50px;
+  position:absolute
+}

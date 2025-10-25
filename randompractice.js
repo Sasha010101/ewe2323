@@ -922,3 +922,88 @@
 // }));
 // const parseUser = JSON.parse(localStorage.getItem("user"));
 // console.log(parseUser);
+//!===================================
+// console.log("hello first world");
+// const btnEl = document.querySelector(".btn-js");
+
+// const oneClick = () => {
+//     const setId = setTimeout(() => {
+//         console.log("hello second world");
+        
+//     }, 3000);
+//     console.log(setId);
+    
+// }
+// console.log("hello third World");
+
+// btnEl.addEventListener("click", oneClick);
+// console.log("hello everybody");
+
+
+// let count = 0;
+// let count2 = 0;
+
+
+//     const setId = setInterval(() => {
+//             count++;
+//      console.log(count);
+     
+      
+        
+//         if (count > 5) {
+//             count = 0;
+//             count2++;
+//             console.log(`${count2}:${count}`);
+          
+   
+//         }
+//     },1000)
+
+
+
+// const btnEl = document.querySelector(".btn-js");
+
+// btnEl.addEventListener("click", e => {
+//     let setId = setInterval(() => {
+//         const rand = Math.floor(Math.random() * 1000);
+//     console.log(`Інтервал ID: ${setId},  ${rand}`);
+//         if (rand> 500) {
+//             console.log("kaput");
+            
+//             clearInterval(setId);
+//             console.log(`Був зупинений номер ${rand} та ID:${setId}`);
+            
+//     }
+// },2000)
+// })
+
+// const date = new Date("2020-10-30T23:59:00");
+// console.log(date);
+
+// const date = new Date();
+// console.log(date.getTime()); // 1624021654154
+// console.log(date.toDateString());
+// console.log(date.toTimeString());
+// console.log(date.toLocaleTimeString());
+// console.log(date.toLocaleString());
+
+
+const startTime = Date.now();
+
+console.log(startTime);
+console.log("hello");
+
+// Твій код, виконуваний упродовж деякого часу
+for(let i = 0; i <= 100; i += 1) {
+	console.log(i);
+}
+
+const endTime = Date.now();
+console.log(endTime);
+
+const elapsedTime = endTime - startTime;
+
+console.log(`Elapsed time: ${elapsedTime} ms`);
+console.log("chao");
+
+
